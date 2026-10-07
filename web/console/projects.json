@@ -1,0 +1,9 @@
+{
+  "_說明": "管理台的專案目錄。新增專案：加一筆 {repo, name, note}（該專案要有 workbench Action）。也可以在管理台「專案目錄」頁直接輸入，只存在自己的瀏覽器。",
+  "projects": [
+    { "repo": "fishon100/pinball-sling", "name": "噴漆闖關 SPRAY RUN", "note": "彈珠×打磚塊（範例專案）" },
+    { "repo": "fishon100/game-inner-page", "name": "遊戲內頁（遊戲資料頁）", "note": "介面向範例：企劃書＋示意圖＋規格書（私人專案，要登入）" },
+    { "repo": "fishon100/game-dev-flow-template", "name": "開發流範本", "note": "接球範例＋整套流程" },
+    { "repo": "fishon100/playhorny-platform", "name": "PlayHorny 平台", "note": "企劃文件流（平台專案）" }
+  ]
+}

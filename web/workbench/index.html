@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>開發工作台</title>
+<meta name="theme-color" content="#0b6e83">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<style>
+:root {
+  --bg: #f6f5fb; --card: #ffffff; --ink: #1d1b29; --muted: #6b6880; --line: #e6e3f0;
+  --brand: #0b6e83; --brand-ink: #ffffff; --brand-soft: #e2f1f4;
+  --ok: #138a4b; --ok-soft: #e3f6ec; --warn: #b26a00; --warn-soft: #fff3dc; --bad: #c62828; --bad-soft: #fde8e8;
+  --info: #1f6feb; --info-soft: #e6f0ff; --violet: #6d28d9; --violet-soft: #efe9fb; --shadow: 0 1px 2px rgb(20 10 60 / .06), 0 4px 16px rgb(20 10 60 / .05);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12111a; --card: #1c1a28; --ink: #ecebf5; --muted: #a29fb8; --line: #2e2b40;
+    --brand: #4db6ca; --brand-ink: #061115; --brand-soft: #11313a;
+    --ok: #4cd391; --ok-soft: #173326; --warn: #ffb547; --warn-soft: #3a2b12; --bad: #ff7676; --bad-soft: #3d1a1d;
+    --info: #79a8ff; --info-soft: #172640; --violet: #b49cf7; --violet-soft: #231c38; --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12111a; --card: #1c1a28; --ink: #ecebf5; --muted: #a29fb8; --line: #2e2b40;
+  --brand: #4db6ca; --brand-ink: #061115; --brand-soft: #11313a;
+  --ok: #4cd391; --ok-soft: #173326; --warn: #ffb547; --warn-soft: #3a2b12; --bad: #ff7676; --bad-soft: #3d1a1d;
+  --info: #79a8ff; --info-soft: #172640; --violet: #b49cf7; --violet-soft: #231c38; --shadow: none;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 "IBM Plex Sans", "Noto Sans TC", system-ui, -apple-system, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: var(--brand); }
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 16px 96px; }
+header.top { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+header.top .wrap { padding-bottom: 0; display: flex; align-items: center; gap: 12px; min-height: 56px; }
+h1 { font-size: 18px; margin: 0; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fresh { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.iconbtn { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 10px; min-width: 40px; height: 40px; font-size: 18px; cursor: pointer; }
+nav.tabs { display: flex; gap: 6px; overflow-x: auto; padding: 10px 0 12px; scrollbar-width: none; }
+nav.tabs::-webkit-scrollbar { display: none; }
+nav.tabs button { flex: none; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 999px; padding: 8px 14px; font: inherit; font-size: 14px; cursor: pointer; }
+nav.tabs button[aria-selected="true"] { background: var(--brand); color: var(--brand-ink); border-color: var(--brand); }
+.badge { display: inline-block; min-width: 20px; padding: 0 6px; border-radius: 999px; background: var(--bad); color: #fff; font-size: 12px; line-height: 20px; text-align: center; margin-left: 4px; }
+section { margin-top: 18px; }
+h2 { font-size: 17px; margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }
+h2 small { font-weight: 400; color: var(--muted); font-size: 13px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; box-shadow: var(--shadow); }
+.stack > * + * { margin-top: 10px; }
+.grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); }
+.actions { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+.btn { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 48px; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); color: var(--ink); text-decoration: none; font-weight: 600; font-size: 15px; text-align: center; }
+.btn.primary { background: var(--brand); color: var(--brand-ink); border-color: var(--brand); }
+.btn.ok { background: var(--ok); color: #fff; border-color: var(--ok); }
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.chip { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; white-space: nowrap; }
+.c-tech { background: var(--violet-soft); color: var(--violet); }
+.s-待同意 { background: var(--warn-soft); color: var(--warn); }
+.s-已同意, .s-製作中 { background: var(--info-soft); color: var(--info); }
+.s-待驗收 { background: var(--brand-soft); color: var(--brand); }
+.s-已完成 { background: var(--ok-soft); color: var(--ok); }
+.lv-red { background: var(--bad-soft); color: var(--bad); } .lv-yellow { background: var(--warn-soft); color: var(--warn); } .lv-green { background: var(--ok-soft); color: var(--ok); }
+.title { font-weight: 700; font-size: 16px; margin: 6px 0 2px; }
+.muted { color: var(--muted); font-size: 14px; }
+.why { font-size: 14px; color: var(--ink); white-space: pre-line; margin: 6px 0; }
+.ask { background: var(--warn-soft); border-radius: 10px; padding: 8px 12px; font-size: 14px; white-space: pre-line; margin: 8px 0; }
+.bar { height: 8px; border-radius: 99px; background: var(--line); overflow: hidden; margin: 8px 0 4px; }
+.bar > i { display: block; height: 100%; background: var(--brand); border-radius: 99px; }
+.list { list-style: none; margin: 0; padding: 0; }
+.list li { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-top: 1px solid var(--line); }
+.list li:first-child { border-top: 0; }
+.list .grow { flex: 1; min-width: 0; }
+.list a.t { color: var(--ink); text-decoration: none; font-weight: 600; overflow-wrap: anywhere; }
+.dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 7px; flex: none; }
+.dot.ok { background: var(--ok); } .dot.bad { background: var(--bad); } .dot.run { background: var(--warn); }
+.empty { color: var(--muted); font-size: 14px; padding: 6px 0; }
+.hero { background: linear-gradient(135deg, #0e4b59, #0b6e83); color: #fff; border: 0; }
+.hero .num { font-size: 34px; font-weight: 800; line-height: 1; }
+.hero a { color: #fff; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px; text-align: center; }
+.stat b { display: block; font-size: 22px; }
+.stat span { font-size: 12px; color: var(--muted); }
+details summary { cursor: pointer; font-weight: 600; padding: 4px 0; }
+.help h3 { font-size: 15px; margin: 14px 0 4px; }
+.help ol, .help ul { padding-left: 20px; margin: 4px 0; font-size: 14px; }
+code { background: var(--brand-soft); padding: 1px 6px; border-radius: 6px; font-size: 13px; }
+.err { background: var(--bad-soft); color: var(--bad); }
+[hidden] { display: none !important; }
+.ico { flex: none; vertical-align: -3px; }
+nav.tabs button { display: inline-flex; align-items: center; gap: 6px; }
+.stat .ico { width: 24px; height: 24px; }
+.tool { justify-content: flex-start; text-align: left; }
+.tool small { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-weight: 400; color: var(--muted); font-size: 12.5px; }
+@media (max-width: 480px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+/* 角色：首頁「我的待辦」依角色顯示（和管理台共用設定） */
+.roles { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.roles::-webkit-scrollbar { display: none; }
+.roles button { flex: none; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 999px; padding: 7px 13px; font: inherit; font-size: 14px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.roles button[aria-pressed="true"] { background: var(--brand); color: var(--brand-ink); border-color: var(--brand); }
+.roles.pick button { border-color: var(--brand); }
+.hero .item { display: flex; gap: 10px; align-items: center; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.18); }
+.hero .item .grow { flex: 1; min-width: 0; }
+.hero .item small { display: block; opacity: .8; font-size: 12.5px; }
+.hero .hbtn { flex: none; background: #fff; color: #0e4b59; min-height: 40px; padding: 8px 12px; font-size: 14px; }
+.btn.sm { min-height: 38px; padding: 6px 10px; font-size: 13.5px; border-radius: 10px; }
+.list li .btn.sm { flex: none; }
+.toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%) translateY(20px); background: var(--ink); color: var(--card); padding: 10px 16px; border-radius: 12px; font-size: 14px; max-width: calc(100% - 32px); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 50; }
+.toast.show { opacity: 1; transform: translateX(-50%); }
+button.btn { font: inherit; cursor: pointer; }
+.note { background: var(--warn-soft, #fbf0e1); border-radius: 12px; padding: 10px 12px; font-size: 14px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1 id="proj">開發工作台</h1>
+    <span class="fresh" id="fresh"></span>
+    <a class="iconbtn" id="toConsole" title="電腦版管理台" aria-label="電腦版管理台" style="display:inline-flex;align-items:center;justify-content:center;text-decoration:none" target="_blank" rel="noopener">💻</a>
+    <button class="iconbtn" id="reload" title="重新整理" aria-label="重新整理">⟳</button>
+  </div>
+  <div class="wrap" style="padding-bottom:0">
+    <nav class="tabs" role="tablist" aria-label="工作台分頁">
+      <button role="tab" data-tab="home" aria-selected="true">首頁</button>
+      <button role="tab" data-tab="changes">提案</button>
+      <button role="tab" data-tab="issues">回饋與需求</button>
+      <button role="tab" data-tab="specs">規則書</button>
+      <button role="tab" data-tab="activity">上線紀錄</button>
+      <button role="tab" data-tab="help">怎麼用</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="status" class="card" style="margin-top:16px">讀取中…</div>
+
+  <div data-panel="home" class="stack" hidden>
+    <section>
+      <h2 id="roleQ">我的待辦 <small>依你的角色</small></h2>
+      <div class="roles" id="roles" role="group" aria-label="角色"></div>
+    </section>
+    <section>
+      <div class="card hero stack" id="todo"></div>
+    </section>
+    <section>
+      <h2>快速動作</h2>
+      <div class="actions" id="quick"></div>
+    </section>
+    <section id="toolsSec" hidden>
+      <h2>專案工具</h2>
+      <div class="actions" id="tools"></div>
+    </section>
+    <section>
+      <div class="stats" id="stats"></div>
+    </section>
+    <section>
+      <h2>進行中的提案</h2>
+      <div class="grid" id="home-active"></div>
+    </section>
+    <section>
+      <h2>最近上線</h2>
+      <div class="card"><ul class="list" id="home-runs"></ul></div>
+    </section>
+  </div>
+
+  <div data-panel="changes" hidden>
+    <section><h2>進行中 <small>依狀態排序</small></h2><div class="grid" id="ch-active"></div></section>
+    <section><h2>已完成 <small id="ch-archived-n"></small></h2><div class="card"><ul class="list" id="ch-archived"></ul></div></section>
+  </div>
+
+  <div data-panel="issues" hidden>
+    <section><div class="actions" id="quick2"></div></section>
+    <section><h2>回饋 <small>還沒處理的</small></h2><div class="card"><ul class="list" id="fb-open"></ul></div></section>
+    <section><h2>需求 <small>還沒處理的</small></h2><div class="card"><ul class="list" id="rq-open"></ul></div></section>
+    <section><details class="card"><summary>已處理的回饋與需求</summary><ul class="list" id="iss-closed"></ul></details></section>
+  </div>
+
+  <div data-panel="specs" hidden>
+    <section><h2>規則書 <small>遊戲「現在」的規則；要改請開提案</small></h2><div class="card"><ul class="list" id="specs"></ul></div></section>
+  </div>
+
+  <div data-panel="activity" hidden>
+    <section id="prSec" hidden><h2>等程式審查的 PR</h2><div class="card"><ul class="list" id="pulls"></ul></div></section>
+    <section><h2>自動測試與部署</h2><div class="card"><ul class="list" id="runs"></ul></div></section>
+    <section><h2>最近的改動</h2><div class="card"><ul class="list" id="commits"></ul></div></section>
+  </div>
+
+  <div data-panel="help" class="help" hidden>
+    <section class="card">
+      <h2>這個工作台是什麼</h2>
+      <p class="muted">專案的總覽：哪些提案在等你同意、做到哪、有哪些回饋還沒處理、最近有沒有上線成功。手機、電腦、平板都能開，不用安裝任何東西。可以「加到主畫面」當 App 用。</p>
+      <h3>同意一張提案（手機也可以）</h3>
+      <ol>
+        <li>首頁「需要你處理」→ 點提案的 <b>看內容並同意</b></li>
+        <li>會打開 GitHub：讀「為什麼、改什麼、需要企劃確認的事」</li>
+        <li>沒問題就勾 <b>☐ 企劃同意</b>（技術提案是 <b>☐ 程式同意</b>，GitHub App 或網頁都能勾）；有意見就在下面留言</li>
+        <li>約 1 分鐘後，工作台會顯示「已同意」，AI 就能開始做</li>
+      </ol>
+      <p class="muted">其他同意方式也算：Spectra 桌面版勾任務 0.1、Notion 卡片改「同意」後對 AI 說「看提案」、或直接對 AI 說「同意 xxx」。</p>
+      <h3>寫回饋、提需求</h3>
+      <ul>
+        <li>按「寫回饋」或「提需求」，照表單填，截圖直接拖進去</li>
+        <li>一張卡寫一件事；名詞用名詞表裡的名字</li>
+        <li>寫完對 AI 說「看回饋」或「看需求」</li>
+      </ul>
+      <h3>不在電腦前，怎麼叫 AI 做事</h3>
+      <ul>
+        <li><b>Claude 手機 App ＋ Remote Control</b>：電腦上的 Claude Code 開著，手機就能看到它在做什麼、直接下指令（電腦要開機、不能睡眠）</li>
+        <li><b>這個工作台＋GitHub App</b>：看進度、同意提案、寫回饋——不需要電腦開著。需要 AI 的地方有「對 AI 說」按鈕：複製指令，貼到 Claude App（Remote Control）</li>
+        <li>每次上線，手機會收到 ntfy 通知（專案有設定的話），點開就能試玩</li>
+      </ul>
+      <h3>換一台電腦</h3>
+      <ul>
+        <li>工作台、GitHub、Notion 都在雲端，換電腦不影響</li>
+        <li>要在新電腦叫 AI 做事：照開發流 <code>05 工具與帳號</code> 的「換電腦清單」，最後對 AI 說「<b>檢查環境</b>」</li>
+      </ul>
+      <h3>狀態是什麼意思</h3>
+      <ul>
+        <li><span class="chip s-待同意">待同意</span> AI 寫好提案，等企劃看過同意（<span class="chip c-tech">技術</span> 提案由程式同意，做完開 PR 給程式審查）</li>
+        <li><span class="chip s-已同意">已同意</span> 可以開始做了：對 AI 說「做 xxx」</li>
+        <li><span class="chip s-製作中">製作中</span> AI 正在照任務清單做，進度條是完成的任務數</li>
+        <li><span class="chip s-待驗收">待驗收</span> 任務都做完、已上線：照<b>試玩清單</b>一項一項試（GitHub App 可以直接勾），沒問題就說「xxx 驗收通過」</li>
+        <li><span class="chip s-已完成">已完成</span> 規則已併回規則書</li>
+      </ul>
+    </section>
+  </div>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script type="module">
+import { icon as I } from "../console/icons.js?v=202610071900";
+(() => {
+  const qs = new URLSearchParams(location.search);
+  // 看哪個 repo：網址 ?repo=帳號/名稱 優先；再來是上次看的（加到主畫面後開啟時網址沒有 ?repo）；最後從 <帳號>.github.io/<repo>/ 推算
+  const guess = location.hostname.endsWith(".github.io") ? `${location.hostname.split(".")[0]}/${location.pathname.split("/")[1]}` : "";
+  let last = null; try { last = localStorage.getItem("workbench:last"); } catch {}
+  const repo = qs.get("repo") || last || guess || "fishon100/game-dev-flow-template";
+  try { localStorage.setItem("workbench:last", repo); } catch {}
+  let repoUrl = `https://github.com/${repo}`; // 讀到資料後改用資料裡的 repo
+  const DATA = qs.get("data") || `https://raw.githubusercontent.com/${repo}/workbench-data/data.json`; // ?data= 給本機預覽用
+  const CACHE = `workbench:${repo}`;
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch {} } };
+  const ago = iso => {
+    const m = Math.round((Date.now() - new Date(iso)) / 60000);
+    if (m < 1) return "剛剛"; if (m < 60) return `${m} 分鐘前`;
+    const h = Math.round(m / 60); if (h < 24) return `${h} 小時前`;
+    return `${Math.round(h / 24)} 天前`;
+  };
+  const day = iso => new Date(iso).toLocaleDateString("zh-TW", { month: "numeric", day: "numeric" });
+  const ORDER = { 待同意: 0, 待驗收: 1, 製作中: 2, 已同意: 3, 已完成: 9 };
+  const short = (s, n) => { s = String(s || "").replace(/[#*`>_]/g, "").trim(); return s.length > n ? s.slice(0, n) + "…" : s; };
+  const newIssue = t => `${repoUrl}/issues/new?template=${t}.yml`;
+  function toast(msg, ms = 4500) { const el = $("#toast"); el.textContent = msg; el.classList.add("show"); clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove("show"), ms); }
+
+  // ---- 角色（和管理台共用設定 console:role）----
+  const ROLES = [["企劃", "fileText"], ["美術", "image"], ["程式", "code"], ["QA", "flask"], ["劇本／數值", "book"], ["全部", "users"]];
+  const ROLE_TAG = { 企劃: /【企劃】/, 美術: /【美術】/, 程式: /【程式】/, QA: /【QA】/i, "劇本／數值": /【(劇本|數值)】/ };
+  // 試玩清單進度（GitHub 討論串：手機 App 可以直接勾）
+  const qaText = c => c.qa ? `試玩清單 ${c.qa.done}/${c.qa.total}${c.qa.failed ? `・${c.qa.failed} 項不通過` : c.qa.total && c.qa.done === c.qa.total ? "・全部通過" : ""}` : "試玩清單建立中（約 1 分鐘）";
+  const clip = (s, n) => { s = String(s || ""); return s.length > n ? s.slice(0, n) + "…" : s; };
+  let role = store.get("console:role") || "";
+  let assetTodo = null; // 素材清單（素材.csv）裡「待製作／修改」的數量，給美術的待辦
+  async function loadAssetTodo(d) {
+    assetTodo = { n: 0 };
+    const sheet = (d.content || []).find(x => x.ext === "csv" && /素材|asset/i.test(x.name)); if (!sheet) return;
+    try {
+      const text = await (await fetch(`https://raw.githubusercontent.com/${d.repo}/${d.branch || "main"}/${sheet.path.split("/").map(encodeURIComponent).join("/")}`)).text();
+      const rows = text.replace(/^\uFEFF/, "").split(/\r?\n/), head = rows[0].split(","), iS = head.indexOf("狀態");
+      if (iS < 0) return;
+      // 簡單切欄：狀態欄在提示詞（可能含逗號）之前，前面的欄位不含逗號
+      assetTodo.n = rows.slice(1).filter(l => /待|修改|退回|重做/.test((l.split(",")[iS] || ""))).length;
+      if (assetTodo.n) render(window.__data, false);
+    } catch {}
+  }
+
+
+  // ---- 對 AI 說：工作台不呼叫 AI；按鈕複製一句指令，貼到 Claude（電腦，或手機 Claude App 的 Remote Control）----
+  const sayBtn = (text, cls = "btn sm") => `<button class="${cls}" data-say="${esc(text)}" title="複製這句話，貼到 Claude">${I("message", 14)}對 AI 說「${esc(text)}」</button>`;
+  document.addEventListener("click", e => {
+    const a = e.target.closest("[data-say]"); if (!a) return;
+    const text = a.dataset.say;
+    (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject()).then(
+      () => toast(`已複製「${text}」：貼到 Claude（手機用 Claude App 的 Remote Control）`),
+      () => toast(`請在 Claude 輸入：${text}`, 9000));
+  });
+
+  // 分頁
+  const tabs = [...document.querySelectorAll("nav.tabs button")];
+  function show(name) {
+    tabs.forEach(b => b.setAttribute("aria-selected", b.dataset.tab === name));
+    document.querySelectorAll("[data-panel]").forEach(p => (p.hidden = p.dataset.panel !== name || !window.__data && name !== "help"));
+    store.set("workbench:tab", name);
+    if (location.hash !== "#" + name) history.replaceState(null, "", location.pathname + location.search + "#" + name);
+  }
+  tabs.forEach(b => b.addEventListener("click", () => { show(b.dataset.tab); scrollTo({ top: 0 }); }));
+
+  function changeCard(c, { compact = false } = {}) {
+    const pct = c.tasks.total ? Math.round((c.tasks.done / c.tasks.total) * 100) : 0;
+    const files = `${repoUrl}/tree/main/${window.__data.changesDir || window.__data.specDir + "/changes"}/${encodeURIComponent(c.folder)}`;
+    const approve = c.status === "待同意" && c.issue ? `<a class="btn ok" href="${esc(c.issue.url)}" target="_blank" rel="noopener">${I("thumbsUp", 16)}看內容並同意</a>` : "";
+    return `<article class="card">
+      <div class="row"><span class="chip s-${esc(c.status)}">${esc(c.status)}</span>${c.kind === "技術" ? '<span class="chip c-tech">技術</span>' : ""}${c.breaking ? '<span class="chip lv-red">BREAKING</span>' : ""}<span class="muted">${esc(c.id)}</span></div>
+      <div class="title">${esc(c.title)}</div>
+      ${compact ? "" : `<div class="why">${esc(short(c.why, 160))}</div>`}
+      ${c.status === "待同意" && c.confirm ? `<div class="ask">${esc(short(c.confirm, 220))}</div>` : ""}
+      ${c.tasks.total ? `<div class="bar" aria-label="進度 ${pct}%"><i style="width:${pct}%"></i></div><div class="muted">任務 ${c.tasks.done}/${c.tasks.total}${c.tasks.next ? `・下一步：${esc(short(c.tasks.next, 40))}` : ""}</div>` : ""}
+      ${c.tasks.approvalNote ? `<div class="muted">${I("checkCircle", 14)} ${esc(c.tasks.approvalNote)}</div>` : ""}
+      ${c.status === "待驗收" ? `<div class="ask">已經做完：請試玩，沒問題就對 AI 說「${esc(c.id)} 驗收通過」</div>` : ""}
+      <div class="row" style="margin-top:10px">${approve}${["已同意", "製作中"].includes(c.status) ? sayBtn(`做 ${c.id}`, "btn primary") : c.status === "待驗收" ? sayBtn(`${c.id} 驗收通過`, "btn primary") : ""}<a class="btn" href="${files}" target="_blank" rel="noopener">${I("fileText", 16)}完整提案</a>${c.issue && c.status !== "待同意" ? `<a class="btn" href="${esc(c.issue.url)}" target="_blank" rel="noopener">${I("message", 16)}討論 ${c.issue.comments ? `(${c.issue.comments})` : ""}</a>` : ""}</div>
+    </article>`;
+  }
+  const lvClass = t => (/🔴|必修/.test(t) ? "lv-red" : /🟢|很好/.test(t) ? "lv-green" : "lv-yellow");
+  function issueItem(i) {
+    return `<li><div class="grow"><a class="t" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>
+      <div class="muted">#${i.number}・${esc(i.user || "")}・${day(i.created)}${i.comments ? `・${i.comments} 則留言` : ""}</div></div></li>`;
+  }
+
+  const OLD_STATUS = { 實作中: "製作中", 待結案: "待驗收", 已結案: "已完成" }; // 專案還沒更新同步程式時的舊狀態名稱
+  function render(d, fromCache) {
+    for (const c of d.changes || []) c.status = OLD_STATUS[c.status] || c.status;
+    window.__data = d;
+    repoUrl = d.repoUrl || repoUrl;
+    document.title = `${d.name}｜開發工作台`;
+    $("#proj").innerHTML = `<img src="icon.svg" alt="" style="width:22px;height:22px;vertical-align:-5px;margin-right:6px">${esc(d.name)}`;
+    $("#fresh").textContent = `${fromCache ? "離線資料・" : ""}更新於 ${ago(d.generatedAt)}`;
+    const active = d.changes.filter(c => !c.archived).sort((a, b) => ORDER[a.status] - ORDER[b.status]);
+    const archived = d.changes.filter(c => c.archived);
+    const waiting = active.filter(c => c.status === "待同意");
+    const toClose = active.filter(c => c.status === "待驗收");
+    const fbOpen = d.feedback.filter(i => i.state === "open");
+    const rqOpen = d.requests.filter(i => i.state === "open");
+    const lastRun = d.runs[0];
+
+    // 首頁：我的待辦（依角色；跟管理台同一套規則）
+    const r = role || "全部", is = (...x) => r === "全部" || x.includes(r);
+    const todo = [], item = (title, sub, action = "") => todo.push(`<div class="item"><div class="grow"><b>${title}</b>${sub ? `<small>${sub}</small>` : ""}</div>${action}</div>`);
+    const consoleUrl = route => `../console/?repo=${encodeURIComponent(d.repo)}#${route}`;
+    const hbtn = (href, label) => `<a class="btn hbtn" href="${esc(href)}" target="_blank" rel="noopener">${label}</a>`;
+    const hsay = text => `<button class="btn hbtn" data-say="${esc(text)}" title="複製這句話，貼到 Claude">${I("message", 14)}複製指令</button>`;
+    if (is("企劃")) {
+      waiting.filter(c => c.kind !== "技術").forEach(c => item(esc(c.title), "等你同意", c.issue ? hbtn(c.issue.url, "看內容並同意") : ""));
+      toClose.filter(c => c.kind !== "技術").forEach(c => item(esc(c.title), `做完了・${esc(qaText(c))}：試完對 AI 說「${esc(c.id)} 驗收通過」`, (c.qa ? hbtn(c.qa.url, "試玩清單") : "") + hsay(`${c.id} 驗收通過`)));
+      if (d.assets?.toReview?.length) item(`${d.assets.toReview.length} 個素材等你確認`, `美術交件了：${esc(clip(d.assets.toReview.join("、"), 50))}`, hbtn(consoleUrl("assets/待確認"), "確認素材"));
+      if (fbOpen.length + rqOpen.length) item(`${fbOpen.length} 則回饋、${rqOpen.length} 則需求還沒處理`, `對 AI 說「${fbOpen.length ? "看回饋" : "看需求"}」整理成提案`, hsay(fbOpen.length ? "看回饋" : "看需求"));
+    }
+    if (is("程式")) {
+      waiting.filter(c => c.kind === "技術").forEach(c => item(`${esc(c.title)} <span class="chip c-tech">技術</span>`, "技術提案，等你（程式）同意", c.issue ? hbtn(c.issue.url, "看內容並同意") : ""));
+      toClose.filter(c => c.kind === "技術").forEach(c => item(esc(c.title), `技術提案做完了：確認後對 AI 說「${esc(c.id)} 驗收通過」`, hsay(`${c.id} 驗收通過`)));
+      (d.pulls || []).forEach(p => item(`審查 PR #${p.number} ${esc(p.title)}`, `${esc(p.user || "")}・${ago(p.created)}`, hbtn(p.url, "審查")));
+      if (lastRun && lastRun.conclusion === "failure") item(`最近一次「${esc(lastRun.name)}」失敗`, esc(lastRun.title || ""), hbtn(lastRun.url, "看原因"));
+      active.filter(c => c.status === "已同意").forEach(c => item(esc(c.title), `${c.kind === "技術" ? "程式" : "企劃"}已同意：對 AI 說「做 ${esc(c.id)}」`, hsay(`做 ${c.id}`)));
+    }
+    if (is("QA")) toClose.forEach(c => item(`試玩：${esc(c.title)}`, esc(qaText(c)), c.qa ? hbtn(c.qa.url, "打開清單") : ""));
+    for (const x of ["企劃", "美術", "程式", "QA", "劇本／數值"]) if (is(x)) for (const c of active) for (const g of c.tasks.groups || []) for (const it of g.items) if (!it.done && ROLE_TAG[x].test(it.text)) item(esc(it.text), `提案：${esc(c.title)}`);
+    if (is("美術")) {
+      if (d.assets) {
+        if (d.assets.returned.length) item(`${d.assets.returned.length} 個素材被退回，要修改`, esc(clip(d.assets.returned.join("、"), 50)), hbtn(consoleUrl("assets/退回"), "看意見"));
+        const make = d.assets.toMake.length - d.assets.returned.length;
+        if (make > 0) item(`${make} 個素材待製作`, "做好後在管理台素材庫按「交件」", hbtn(consoleUrl("assets"), "素材庫"));
+      } else if (!assetTodo) loadAssetTodo(d); else if (assetTodo.n) item(`${assetTodo.n} 個素材待製作或要修改`, "素材清單（素材.csv），在電腦版管理台的素材庫看細節");
+    }
+    [...fbOpen, ...rqOpen].filter(i => r !== "全部" && r.split("／").some(x => i.labels?.includes(x))).forEach(i => item(`#${i.number} ${esc(i.title)}`, `標籤：${esc(r)}`, hbtn(i.url, "查看")));
+    $("#todo").innerHTML = `<div class="row"><span class="num">${todo.length}</span><span>${r === "全部" ? "件事需要處理" : `件${esc(r)}的待辦`}</span></div>` +
+      (todo.length ? todo.join("") : `<div>${r === "全部" || r === "企劃" ? "目前沒有等你的事。可以去試玩最新版本，或丟新想法到需求。" : `目前沒有${esc(r)}的待辦。提案任務標了【${esc(r.split("／")[0])}】就會出現在這裡。`}</div>`);
+    $("#roles").className = "roles" + (role ? "" : " pick");
+    $("#roleQ").innerHTML = role ? `我的待辦 <small>依你的角色</small>` : `你主要負責什麼？ <small>選一個，首頁就只列你的待辦</small>`;
+    $("#roles").innerHTML = ROLES.map(([x, ic]) => `<button data-role="${esc(x)}" aria-pressed="${x === role}">${I(ic, 15)}${esc(x)}</button>`).join("");
+
+    const quick = [
+      ...d.links.map(l => `<a class="btn ${/試玩/.test(l.label) ? "primary" : ""}" href="${esc(l.url)}" target="_blank" rel="noopener">${/試玩/.test(l.label) ? I("play", 16) : ""}${esc(l.label.replace(/^[^\p{L}\p{N}]+/u, ""))}</a>`),
+      `<a class="btn" href="${newIssue("feedback")}" target="_blank" rel="noopener">${I("gamepad", 16)}寫回饋</a>`,
+      `<a class="btn" href="${newIssue("request")}" target="_blank" rel="noopener">${I("lightbulb", 16)}提需求</a>`,
+    ].join("");
+    $("#quick").innerHTML = quick;
+    // 專案工具（外掛）：workbench.config.json 的 tools
+    const tools = d.tools || [];
+    $("#toolsSec").hidden = !tools.length;
+    $("#tools").innerHTML = tools.map(x => `<a class="btn tool" href="${esc(x.url)}" target="_blank" rel="noopener">${I(x.icon || "wrench", 18)}<span>${esc(x.label)}${x.desc ? `<small>${esc(x.desc)}</small>` : ""}</span></a>`).join("");
+    $("#quick2").innerHTML = `<a class="btn primary" href="${newIssue("feedback")}" target="_blank" rel="noopener">${I("gamepad", 16)}寫回饋</a><a class="btn" href="${newIssue("request")}" target="_blank" rel="noopener">${I("lightbulb", 16)}提需求</a>`;
+
+    $("#stats").innerHTML = [
+      [active.length, "進行中提案"], [archived.length, "已完成"], [d.specs.length, "份規則書"],
+      [lastRun ? I(lastRun.conclusion === "success" ? "checkCircle" : lastRun.conclusion === "failure" ? "alert" : "hourglass", 24) : "—", "最近上線"],
+    ].map(([n, l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("");
+
+    $("#home-active").innerHTML = active.length ? active.map(c => changeCard(c, { compact: true })).join("") : `<div class="card empty">沒有進行中的提案。新想法寫在「提需求」，再對 AI 說「看需求」。</div>`;
+    $("#ch-active").innerHTML = active.length ? active.map(c => changeCard(c)).join("") : `<div class="card empty">沒有進行中的提案。</div>`;
+    $("#ch-archived-n").textContent = `${archived.length} 張`;
+    $("#ch-archived").innerHTML = archived.map(c => `<li><span class="chip s-已完成">${esc(c.date.slice(5).replace("-", "/"))}</span><div class="grow"><a class="t" href="${repoUrl}/tree/main/${d.changesDir || d.specDir + "/changes"}/archive/${encodeURIComponent(c.folder)}" target="_blank" rel="noopener">${esc(c.title)}</a><div class="muted">${esc(c.id)}・任務 ${c.tasks.done}/${c.tasks.total}</div></div></li>`).join("") || `<li class="empty">還沒有</li>`;
+
+    $("#fb-open").innerHTML = fbOpen.map(i => issueItem(i).replace('<div class="grow">', `<span class="chip ${lvClass(i.title + i.labels.join())}">${/🔴|必修/.test(i.title) ? "必修" : /🟢|很好/.test(i.title) ? "很好" : "回饋"}</span><div class="grow">`).replace("</div></li>", `</div>${sayBtn(`把 #${i.number} 開成提案`)}</li>`)).join("") || `<li class="empty">沒有未處理的回饋 👍</li>`;
+    $("#rq-open").innerHTML = rqOpen.map(i => issueItem(i).replace("</div></li>", `</div>${sayBtn(`把 #${i.number} 開成提案`)}</li>`)).join("") || `<li class="empty">沒有未處理的需求</li>`;
+    $("#iss-closed").innerHTML = [...d.feedback, ...d.requests].filter(i => i.state !== "open").map(issueItem).join("") || `<li class="empty">還沒有</li>`;
+
+    $("#specs").innerHTML = d.specs.map(s => `<li><div class="grow"><a class="t" href="${repoUrl}/blob/main/${d.specDir}/specs/${encodeURIComponent(s.name)}/spec.md" target="_blank" rel="noopener">${esc(s.name)}</a><div class="muted">${esc(short(s.purpose, 90))}</div></div><span class="chip s-已同意">${s.requirements} 條</span></li>`).join("") || `<li class="empty">還沒有規則書</li>`;
+
+    const runItem = r => `<li><span class="dot ${r.conclusion === "success" ? "ok" : r.conclusion === "failure" ? "bad" : "run"}"></span><div class="grow"><a class="t" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title || r.name)}</a><div class="muted">${esc(r.name)}・${r.conclusion === "success" ? "成功" : r.conclusion === "failure" ? "失敗" : "進行中"}・${ago(r.date)}</div></div></li>`;
+    $("#home-runs").innerHTML = d.runs.slice(0, 3).map(runItem).join("") || `<li class="empty">還沒有紀錄</li>`;
+    $("#runs").innerHTML = d.runs.map(runItem).join("") || `<li class="empty">還沒有紀錄</li>`;
+    $("#prSec").hidden = !(d.pulls || []).length;
+    $("#pulls").innerHTML = (d.pulls || []).map(p => `<li><div class="grow"><a class="t" href="${esc(p.url)}" target="_blank" rel="noopener">#${p.number} ${esc(p.title)}</a><div class="muted">${esc(p.user || "")}・${ago(p.created)}${p.draft ? "・草稿" : ""}</div></div></li>`).join("");
+    $("#commits").innerHTML = d.commits.map(c => `<li><div class="grow"><a class="t" href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.subject)}</a><div class="muted">${esc(c.author)}・${ago(c.date)}</div></div></li>`).join("");
+
+    tabs.find(b => b.dataset.tab === "home").innerHTML = `${I("home", 15)}首頁${todo.length ? `<span class="badge">${todo.length}</span>` : ""}`;
+    tabs.find(b => b.dataset.tab === "issues").innerHTML = `${I("message", 15)}回饋與需求${fbOpen.length ? `<span class="badge">${fbOpen.length}</span>` : ""}`;
+    $("#status").hidden = true;
+    show((location.hash.slice(1)) || store.get("workbench:tab") || "home");
+  }
+
+  async function load() {
+    $("#reload").disabled = true;
+    try {
+      const r = await fetch(`${DATA}?t=${Date.now()}`, { cache: "no-store" });
+      if (!r.ok) throw new Error(r.status === 404 ? "這個專案還沒有工作台資料（第一次要等 GitHub Actions 的 workbench 跑完）" : `讀取失敗（${r.status}）`);
+      const d = await r.json();
+      store.set(CACHE, JSON.stringify(d));
+      render(d, false);
+    } catch (e) {
+      const cached = store.get(CACHE);
+      if (cached) { render(JSON.parse(cached), true); }
+      else { const s = $("#status"); s.hidden = false; s.className = "card err"; s.innerHTML = `${esc(e.message)}<br><a href="${repoUrl}/actions" target="_blank" rel="noopener">看 GitHub Actions</a>`; show("help"); }
+    } finally { $("#reload").disabled = false; }
+  }
+  $("#reload").addEventListener("click", load);
+  $("#toConsole").href = `../console/?repo=${encodeURIComponent(repo)}`;
+  $("#toConsole").innerHTML = I("workflow", 18); $("#reload").innerHTML = I("refresh", 18);
+  const TAB_ICON = { home: "home", changes: "list", issues: "message", specs: "scroll", activity: "rocket", help: "help" };
+  document.addEventListener("click", e => { const b = e.target.closest("[data-role]"); if (!b) return; role = b.dataset.role; store.set("console:role", role); render(window.__data, false); });
+  tabs.forEach(b => { b.innerHTML = I(TAB_ICON[b.dataset.tab], 15) + b.textContent.trim(); });
+  addEventListener("hashchange", () => { const t = location.hash.slice(1); if (tabs.some(b => b.dataset.tab === t)) show(t); });
+  document.addEventListener("visibilitychange", () => { if (!document.hidden && window.__data && Date.now() - new Date(window.__data.generatedAt) > 60000) load(); });
+  load();
+})();
+</script>
+</body>
+</html>

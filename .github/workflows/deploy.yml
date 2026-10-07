@@ -1,0 +1,75 @@
+# 推上 main → 跑測試 → 部署到 GitHub Pages → 手機通知（成功或失敗都會通知）
+# 開 PR（技術提案）→ 只跑測試，給程式審查時參考；合併到 main 才部署
+# 沒有網站的專案（例如私人專案、免費方案不能開 Pages）：Settings → Secrets and variables → Actions → Variables 加 PAGES = off，只跑測試、不部署
+# 第一次用：Settings → Pages → Source 選「GitHub Actions」；（選用）Secrets 加 NTFY_TOPIC
+name: test-and-deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ${{ github.event_name == 'pull_request' && format('pr-{0}', github.ref) || 'pages' }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 自動測試
+        run: node --test
+
+  deploy:
+    needs: test
+    if: github.event_name != 'pull_request' && vars.PAGES != 'off'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ vars.PAGES_PATH || 'web' }}   # 預設發布 web/；企劃文件流的專案在 repo 變數（Settings → Secrets and variables → Actions → Variables）設 PAGES_PATH = docs，示意圖才有 Pages 網址
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  notify:
+    needs: [test, deploy]
+    if: always() && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 手機通知（ntfy）
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          OK: ${{ needs.deploy.result == 'success' }}
+          NOSITE: ${{ needs.deploy.result == 'skipped' && needs.test.result == 'success' }}
+          MSG: ${{ github.event.head_commit.message }}
+          SITE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -z "$NTFY_TOPIC" ]; then echo "沒有設定 NTFY_TOPIC，略過通知"; exit 0; fi
+          FIRST_LINE=$(printf '%s' "$MSG" | head -n 1)
+          FIRST_LINE=${FIRST_LINE:-手動重新部署}
+          if [ "$NOSITE" = "true" ]; then
+            curl -s -H "Title: 測試通過" -H "Tags: white_check_mark" -H "Click: $RUN" -d "$FIRST_LINE（這個專案沒有網站，只跑測試）" "https://ntfy.sh/$NTFY_TOPIC"
+          elif [ "$OK" = "true" ]; then
+            curl -s -H "Title: 遊戲已更新" -H "Tags: video_game" -H "Click: $SITE" \
+              -H "Actions: view, 開啟遊戲, $SITE; view, 測試頁, ${SITE}test.html" \
+              -d "$FIRST_LINE" "https://ntfy.sh/$NTFY_TOPIC"
+          else
+            curl -s -H "Title: 部署失敗" -H "Tags: x" -H "Priority: high" -H "Click: $RUN" \
+              -d "$FIRST_LINE（測試沒過或部署失敗，點開看原因）" "https://ntfy.sh/$NTFY_TOPIC"
+          fi

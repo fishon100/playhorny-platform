@@ -1,0 +1,4 @@
+{
+  "ntfy_topic": "換成你自己的主題名稱（等於密碼，這個檔不要進 git）",
+  "ntfy_server": "https://ntfy.sh"
+}

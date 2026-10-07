@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E4B59"/>
+      <stop offset="1" stop-color="#0B6E83"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+  <!-- 流程樹：主線往下、分支往右；右邊亮色節點＝目前進行中的步驟 -->
+  <path d="M21 19V45M21 24c0 8 7 10 16 10" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="21" cy="17" r="6" fill="#fff"/>
+  <circle cx="21" cy="47" r="6" fill="#fff"/>
+  <circle cx="43" cy="34" r="7" fill="#7FE0EE" stroke="#fff" stroke-width="3"/>
+</svg>

@@ -1,0 +1,36 @@
+name: 💡 新需求／新想法
+description: 想加的功能、想改的玩法、想試的點子
+title: "需求："
+labels: ["需求"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        寫「玩家遇到什麼、想要什麼感覺」就好，不用寫怎麼做。AI 會整理成提案，等你同意後才開始做。
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先
+      options:
+        - 🔴 必做
+        - 🟡 想做
+        - ⚪ 之後再說
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 玩家遇到什麼問題／想要什麼
+      placeholder: 例：玩家不知道道具要怎麼用，常常浪費掉
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: 想法、參考（選填）
+      description: 參考遊戲、參考圖、影片連結都可以貼
+  - type: textarea
+    id: done
+    attributes:
+      label: 怎樣算做好了（選填）
+      description: 能量化最好，例：第 1 區新手每關最多掉 1 顆愛心

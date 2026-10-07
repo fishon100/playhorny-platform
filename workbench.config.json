@@ -1,0 +1,13 @@
+{
+  "_說明": "工作台／管理台的設定。flow: planning ＝企劃文件流（docs/flow/10）；提案放 docs/提案。",
+  "name": "PlayHorny 平台",
+  "flow": "planning",
+  "spec_dir": "docs/提案",
+  "content_dirs": ["docs/企劃", "docs/提案"],
+  "links": [
+    { "label": "文件中心（Notion）", "url": "https://app.notion.com/p/1af11c058c2d80d5a502d3d5052041a8" },
+    { "label": "專案工作流程 × SDD", "url": "https://app.notion.com/p/3f211c058c2d8167a64de51e51e6d89c" }
+  ],
+  "tools": [],
+  "qa_always": []
+}

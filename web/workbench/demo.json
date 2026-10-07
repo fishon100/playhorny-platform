@@ -1,0 +1,2300 @@
+{
+ "generatedAt": "2026-10-05T16:51:50.863Z",
+ "repo": "fishon100/pinball-sling",
+ "repoUrl": "https://github.com/fishon100/pinball-sling",
+ "specDir": "docs/spectra",
+ "branch": "main",
+ "contentDirs": [
+  "docs/企劃"
+ ],
+ "content": [
+  {
+   "path": "docs/企劃/README.md",
+   "name": "README.md",
+   "ext": "md",
+   "size": 625,
+   "title": "企劃文件（鏡像）"
+  },
+  {
+   "path": "docs/企劃/notion-import/回饋.csv",
+   "name": "回饋.csv",
+   "ext": "csv",
+   "size": 8166,
+   "title": "回饋"
+  },
+  {
+   "path": "docs/企劃/notion-import/怎麼匯入.md",
+   "name": "怎麼匯入.md",
+   "ext": "md",
+   "size": 3365,
+   "title": "彈珠專案 → Notion 匯入（手動版，約 15 分鐘）"
+  },
+  {
+   "path": "docs/企劃/notion-import/提案確認.csv",
+   "name": "提案確認.csv",
+   "ext": "csv",
+   "size": 10714,
+   "title": "提案確認"
+  },
+  {
+   "path": "docs/企劃/notion-import/知識庫.csv",
+   "name": "知識庫.csv",
+   "ext": "csv",
+   "size": 1647,
+   "title": "知識庫"
+  },
+  {
+   "path": "docs/企劃/notion-import/素材.csv",
+   "name": "素材.csv",
+   "ext": "csv",
+   "size": 6820,
+   "title": "素材"
+  },
+  {
+   "path": "docs/企劃/notion-import/開發日誌.csv",
+   "name": "開發日誌.csv",
+   "ext": "csv",
+   "size": 24313,
+   "title": "開發日誌"
+  },
+  {
+   "path": "docs/企劃/notion-import/需求池.csv",
+   "name": "需求池.csv",
+   "ext": "csv",
+   "size": 42,
+   "title": "需求池"
+  },
+  {
+   "path": "docs/企劃/回饋.md",
+   "name": "回饋.md",
+   "ext": "md",
+   "size": 6358,
+   "title": "回饋"
+  },
+  {
+   "path": "docs/企劃/圖/美術設計-新彈珠台.jpg",
+   "name": "美術設計-新彈珠台.jpg",
+   "ext": "jpg",
+   "size": 330428,
+   "title": "美術設計-新彈珠台"
+  },
+  {
+   "path": "docs/企劃/圖/試玩截圖-已移除的救球柱.png",
+   "name": "試玩截圖-已移除的救球柱.png",
+   "ext": "png",
+   "size": 10408,
+   "title": "試玩截圖-已移除的救球柱"
+  },
+  {
+   "path": "docs/企劃/圖/試玩截圖-文字磚1.png",
+   "name": "試玩截圖-文字磚1.png",
+   "ext": "png",
+   "size": 814328,
+   "title": "試玩截圖-文字磚1"
+  },
+  {
+   "path": "docs/企劃/圖/試玩截圖-文字磚2.png",
+   "name": "試玩截圖-文字磚2.png",
+   "ext": "png",
+   "size": 814328,
+   "title": "試玩截圖-文字磚2"
+  },
+  {
+   "path": "docs/企劃/圖/試玩截圖-經典擋板.png",
+   "name": "試玩截圖-經典擋板.png",
+   "ext": "png",
+   "size": 26025,
+   "title": "試玩截圖-經典擋板"
+  },
+  {
+   "path": "docs/企劃/媒體庫/00 媒體庫總覽.md",
+   "name": "00 媒體庫總覽.md",
+   "ext": "md",
+   "size": 2909,
+   "title": "媒體庫總覽"
+  },
+  {
+   "path": "docs/企劃/媒體庫/美術/美術素材清單.md",
+   "name": "美術素材清單.md",
+   "ext": "md",
+   "size": 5619,
+   "title": "美術素材清單"
+  },
+  {
+   "path": "docs/企劃/媒體庫/美術/美術風格指南.md",
+   "name": "美術風格指南.md",
+   "ext": "md",
+   "size": 3249,
+   "title": "美術風格指南"
+  },
+  {
+   "path": "docs/企劃/媒體庫/音樂音效/音效素材清單.md",
+   "name": "音效素材清單.md",
+   "ext": "md",
+   "size": 1991,
+   "title": "音效素材清單"
+  },
+  {
+   "path": "docs/企劃/媒體庫/音樂音效/音樂素材清單.md",
+   "name": "音樂素材清單.md",
+   "ext": "md",
+   "size": 1644,
+   "title": "音樂素材清單"
+  },
+  {
+   "path": "docs/企劃/知識庫/00 知識庫總覽.md",
+   "name": "00 知識庫總覽.md",
+   "ext": "md",
+   "size": 1798,
+   "title": "知識庫總覽"
+  },
+  {
+   "path": "docs/企劃/知識庫/世界/五個街區.md",
+   "name": "五個街區.md",
+   "ext": "md",
+   "size": 1280,
+   "title": "五個街區"
+  },
+  {
+   "path": "docs/企劃/知識庫/劇情/世界觀.md",
+   "name": "世界觀.md",
+   "ext": "md",
+   "size": 1112,
+   "title": "世界觀"
+  },
+  {
+   "path": "docs/企劃/知識庫/劇情/劇情大綱.md",
+   "name": "劇情大綱.md",
+   "ext": "md",
+   "size": 1809,
+   "title": "劇情大綱"
+  },
+  {
+   "path": "docs/企劃/知識庫/劇情/劇情腳本.md",
+   "name": "劇情腳本.md",
+   "ext": "md",
+   "size": 8489,
+   "title": "劇情腳本（16 段漫畫）"
+  },
+  {
+   "path": "docs/企劃/知識庫/名詞與命名總表.md",
+   "name": "名詞與命名總表.md",
+   "ext": "md",
+   "size": 4101,
+   "title": "名詞與命名總表"
+  },
+  {
+   "path": "docs/企劃/知識庫/數值總表.md",
+   "name": "數值總表.md",
+   "ext": "md",
+   "size": 2785,
+   "title": "數值總表"
+  },
+  {
+   "path": "docs/企劃/知識庫/角色/噴噴.md",
+   "name": "噴噴.md",
+   "ext": "md",
+   "size": 1504,
+   "title": "噴噴"
+  },
+  {
+   "path": "docs/企劃/知識庫/角色/小葵.md",
+   "name": "小葵.md",
+   "ext": "md",
+   "size": 1161,
+   "title": "小葵"
+  },
+  {
+   "path": "docs/企劃/知識庫/角色/灰先生.md",
+   "name": "灰先生.md",
+   "ext": "md",
+   "size": 1353,
+   "title": "灰先生"
+  },
+  {
+   "path": "docs/企劃/知識庫/角色/配角.md",
+   "name": "配角.md",
+   "ext": "md",
+   "size": 524,
+   "title": "配角"
+  },
+  {
+   "path": "docs/企劃/知識庫/角色/阿鰭.md",
+   "name": "阿鰭.md",
+   "ext": "md",
+   "size": 1520,
+   "title": "阿鰭"
+  },
+  {
+   "path": "docs/企劃/規劃書/00 主架構規劃書.md",
+   "name": "00 主架構規劃書.md",
+   "ext": "md",
+   "size": 4589,
+   "title": "噴漆闖關 SPRAY RUN — 主架構規劃書"
+  },
+  {
+   "path": "docs/企劃/規劃書/F01 開場動畫.md",
+   "name": "F01 開場動畫.md",
+   "ext": "md",
+   "size": 2520,
+   "title": "F01 開場動畫（OpeningSequence）"
+  },
+  {
+   "path": "docs/企劃/規劃書/F02 滑板操作.md",
+   "name": "F02 滑板操作.md",
+   "ext": "md",
+   "size": 3079,
+   "title": "F02 滑板操作（Paddle）— 預設操作"
+  },
+  {
+   "path": "docs/企劃/規劃書/F03 經典擋板操作.md",
+   "name": "F03 經典擋板操作.md",
+   "ext": "md",
+   "size": 1800,
+   "title": "F03 經典擋板操作（Flippers）— 挑戰模式"
+  },
+  {
+   "path": "docs/企劃/規劃書/F04 發射桿.md",
+   "name": "F04 發射桿.md",
+   "ext": "md",
+   "size": 2222,
+   "title": "F04 發射桿（Plunger）"
+  },
+  {
+   "path": "docs/企劃/規劃書/F05 台面配置.md",
+   "name": "F05 台面配置.md",
+   "ext": "md",
+   "size": 3545,
+   "title": "F05 台面配置（TableLayout）"
+  },
+  {
+   "path": "docs/企劃/規劃書/F06 磚塊與關卡.md",
+   "name": "F06 磚塊與關卡.md",
+   "ext": "md",
+   "size": 2649,
+   "title": "F06 磚塊與關卡（Bricks／Stages）"
+  },
+  {
+   "path": "docs/企劃/規劃書/F07 首領灰先生.md",
+   "name": "F07 首領灰先生.md",
+   "ext": "md",
+   "size": 1768,
+   "title": "F07 首領：灰先生（Boss）"
+  },
+  {
+   "path": "docs/企劃/規劃書/F08 強化罐與道具.md",
+   "name": "F08 強化罐與道具.md",
+   "ext": "md",
+   "size": 3163,
+   "title": "F08 強化罐與道具（Upgrades／Items）"
+  },
+  {
+   "path": "docs/企劃/規劃書/F09 獎牌與成就.md",
+   "name": "F09 獎牌與成就.md",
+   "ext": "md",
+   "size": 2492,
+   "title": "F09 獎牌與成就（Medals／Achievements）"
+  },
+  {
+   "path": "docs/企劃/規劃書/F10 新手輔助與教學.md",
+   "name": "F10 新手輔助與教學.md",
+   "ext": "md",
+   "size": 2395,
+   "title": "F10 新手輔助與教學（Assists／Tutorial）"
+  },
+  {
+   "path": "docs/企劃/規劃書/F11 漫畫系統與劇情回放.md",
+   "name": "F11 漫畫系統與劇情回放.md",
+   "ext": "md",
+   "size": 3121,
+   "title": "F11 漫畫系統與劇情回放（Comic／Gallery）"
+  },
+  {
+   "path": "docs/企劃/規劃書/F12 介面.md",
+   "name": "F12 介面.md",
+   "ext": "md",
+   "size": 3466,
+   "title": "F12 介面（畫面與 HUD）"
+  },
+  {
+   "path": "docs/企劃/規劃書/F13 美術呈現.md",
+   "name": "F13 美術呈現.md",
+   "ext": "md",
+   "size": 3183,
+   "title": "F13 美術呈現（Art）"
+  },
+  {
+   "path": "docs/企劃/規劃書/F14 聲音與震動.md",
+   "name": "F14 聲音與震動.md",
+   "ext": "md",
+   "size": 2050,
+   "title": "F14 聲音與震動（Audio／Haptics）"
+  },
+  {
+   "path": "docs/企劃/規劃書/F15 難度與平衡.md",
+   "name": "F15 難度與平衡.md",
+   "ext": "md",
+   "size": 3818,
+   "title": "F15 難度與平衡（擬人玩家）"
+  },
+  {
+   "path": "docs/企劃/開發日誌.md",
+   "name": "開發日誌.md",
+   "ext": "md",
+   "size": 26049,
+   "title": "開發日誌"
+  }
+ ],
+ "name": "噴漆闖關 SPRAY RUN（示範資料）",
+ "links": [
+  {
+   "label": "試玩",
+   "url": "https://fishon100.github.io/pinball-sling/street/"
+  }
+ ],
+ "changes": [
+  {
+   "id": "paddle-trail",
+   "folder": "paddle-trail",
+   "archived": false,
+   "date": "",
+   "title": "滑板加噴漆拖尾",
+   "why": "企劃試玩覺得滑板移動時沒有速度感，看不出自己移動多快。",
+   "what": "- 滑板移動時留下 0.2 秒的噴漆拖尾\n- 第 4、5 區拖尾變短",
+   "confirm": "- 拖尾顏色要跟街區配色嗎？\n- 手機上會不會太花？",
+   "breaking": false,
+   "capabilities": [
+    "paddle-control"
+   ],
+   "artifacts": {
+    "proposal": true,
+    "specs": true,
+    "design": false,
+    "tasks": true
+   },
+   "tasks": {
+    "groups": [
+     {
+      "title": "0. 企劃確認",
+      "items": [
+       {
+        "done": false,
+        "text": "0.1 企劃確認：讀過 proposal，同意開始實作"
+       }
+      ]
+     },
+     {
+      "title": "1. 測試",
+      "items": [
+       {
+        "done": false,
+        "text": "1.1 先寫會失敗的測試：拖尾長度 0.2 秒"
+       },
+       {
+        "done": false,
+        "text": "1.2 先寫會失敗的測試：手機上拖尾不超過 12 點"
+       }
+      ]
+     },
+     {
+      "title": "2. 實作",
+      "items": [
+       {
+        "done": false,
+        "text": "2.1 滑板移動時畫噴漆拖尾"
+       },
+       {
+        "done": false,
+        "text": "2.2 跑全部測試"
+       },
+       {
+        "done": false,
+        "text": "2.3 部署並通知"
+       }
+      ]
+     }
+    ],
+    "total": 5,
+    "done": 0,
+    "hasApprovalItem": true,
+    "approved": false,
+    "approvalNote": "",
+    "next": "1.1 先寫會失敗的測試：拖尾長度 0.2 秒"
+   },
+   "status": "待同意",
+   "issue": {
+    "number": 12,
+    "url": "https://github.com/fishon100/pinball-sling/issues",
+    "state": "open",
+    "comments": 0
+   }
+  },
+  {
+   "id": "boss-hp-bar",
+   "folder": "boss-hp-bar",
+   "archived": false,
+   "date": "",
+   "title": "首領血條改成分段",
+   "why": "企劃試玩覺得滑板移動時沒有速度感，看不出自己移動多快。",
+   "what": "- 滑板移動時留下 0.2 秒的噴漆拖尾\n- 第 4、5 區拖尾變短",
+   "confirm": "",
+   "breaking": false,
+   "capabilities": [
+    "boss-mr-grey",
+    "game-ui"
+   ],
+   "artifacts": {
+    "proposal": true,
+    "specs": true,
+    "design": true,
+    "tasks": true
+   },
+   "tasks": {
+    "groups": [
+     {
+      "title": "0. 企劃確認",
+      "items": [
+       {
+        "done": true,
+        "text": "0.1 企劃確認：同意（企劃於 GitHub Issue #10 同意，2026-10-06）"
+       }
+      ]
+     },
+     {
+      "title": "1. 測試",
+      "items": [
+       {
+        "done": true,
+        "text": "1.1 先寫會失敗的測試：血條分 3 段"
+       },
+       {
+        "done": true,
+        "text": "1.2 先寫會失敗的測試：每段打完有震動"
+       }
+      ]
+     },
+     {
+      "title": "2. 實作",
+      "items": [
+       {
+        "done": true,
+        "text": "2.1 首領血條改成分段"
+       },
+       {
+        "done": true,
+        "text": "2.2 每段打完震動與噴漆"
+       },
+       {
+        "done": false,
+        "text": "2.3 跑全部測試"
+       },
+       {
+        "done": false,
+        "text": "2.4 部署並通知"
+       },
+       {
+        "done": false,
+        "text": "2.9 【美術】畫 Boss 血條外框（粉紅噴漆風）"
+       },
+       {
+        "done": false,
+        "text": "2.10 【劇本】Boss 換招時的台詞 3 句"
+       }
+      ]
+     }
+    ],
+    "total": 6,
+    "done": 4,
+    "hasApprovalItem": true,
+    "approved": true,
+    "approvalNote": "企劃於 GitHub Issue #10 同意，2026-10-06",
+    "next": "2.3 跑全部測試"
+   },
+   "status": "製作中",
+   "issue": {
+    "number": 10,
+    "url": "https://github.com/fishon100/pinball-sling/issues",
+    "state": "open",
+    "comments": 2
+   }
+  },
+  {
+   "id": "short-tables-all-districts",
+   "folder": "2026-10-05-short-tables-all-districts",
+   "archived": true,
+   "date": "2026-10-05",
+   "title": "全部矮台面、鏡頭固定",
+   "why": "企劃試玩發現：第 2～5 區台面比較高，鏡頭會跟著球一直上下移動，玩家很難操作、也會煩躁。更根本的問題是：球從高處掉下來時，鏡頭要先追回底部，玩家常常來不及反應球就掉了。所以所有區的台面都要跟第 1 區一樣矮，鏡頭完全不捲動。\n\n但「台面越高越難」原本是後面街區的主要難度來源。先做實驗（擬人新手、滑板、每區 9 關 × 2 局）：台面全部變矮後，第 3～5 區每關掉的愛心從 0.83 降到 0.28～0.61，每關秒數從 82～118 秒降到 24～34 秒，難度曲線變平。企劃決定改用其他方式維持「越後面越難」。",
+   "what": "- 50 關全部用矮台面（跟第 1 區一樣，一個畫面看完），遊玩時鏡頭固定不捲動\n- 第 2～5 區的台面配置重新擺：彈跳柱（中柱）越後面越少\n- 球越後面越小：第 3 區起變小，第 4、5 區更小（半徑 12／12／11／10.5／10.5，量測後定案）\n- 第 4、5 區一般關卡也用小滑板（小滑板寬度 80 → 96，量測後定案）\n- 第 4、5 區磚塊變硬：拿掉 v3.5.5 為了高台面而做的「第 4、5 區少 1 血」（原本規劃第 3～5 區再 +1 血，量測太難不採用）\n- 新元件「加速帶」：像瑪利歐賽車那樣，球往上經過時會被加速；第 3 區起出現\n- 球的軌跡提示越後面越少：彈道預覽線與落點圈只留在第 1、2 區；球的拖尾光第 3 區剩一半、第 4、5 區沒有\n- 第 2～5 區也訂出難度目標，用擬人玩家量測並寫成自動測試",
+   "confirm": "",
+   "breaking": false,
+   "capabilities": [
+    "art-presentation",
+    "bricks-and-stages",
+    "core-game-loop",
+    "difficulty-balance",
+    "newbie-assist",
+    "paddle-control",
+    "table-layout"
+   ],
+   "artifacts": {
+    "proposal": true,
+    "specs": true,
+    "design": true,
+    "tasks": true
+   },
+   "tasks": {
+    "groups": [
+     {
+      "title": "1. 先寫測試（修改前要失敗）",
+      "items": [
+       {
+        "done": true,
+        "text": "1.1 新增 AC-S27：每一關 `SR.layoutFor(n).top` 都是 320，並抽第 5／15／25／35／45 關讓機器人玩 20 秒，鏡頭 y 一直是 320（Table Height Per District、Art Controls Always Visible When Acting）。驗收：修改前執行，AC-S27 失敗"
+       },
+       {
+        "done": true,
+        "text": "1.2 新增 AC-S28：加速帶規則（Boost Pads）——往上 800 變 1080、500 變 1000、1700 變 2000、往下不加速、0.5 秒內不重複、第 25／35／45／30／15 關分別 1／2／2／0／0 條。驗收：修改前執行，AC-S28 失敗"
+       },
+       {
+        "done": true,
+        "text": "1.3 新增 AC-S30：第 5／15／25／35／45 關球半徑 12／12／11／10.5／10.5、第 35 關大罐 2 級＝13.5（量測後定案，原規劃 10.5／9）（Ball Size Per District）；第 3／25／35／10 關滑板 M／M／S／S（Paddle Sizes）；第 31～49 關一般磚血介於圖案數字～＋1（Brick Hit Points，量測後定案）；第 2 區配置最多 2 對、第 3～5 區最多 1 對彈跳柱（Pop Bumpers）；第 25 關彈道預覽 0 秒；第 5／15／25／35／45 關拖尾最多 8／8／4／0／0 點。驗收：修改前執行，AC-S30 失敗"
+       },
+       {
+        "done": true,
+        "text": "1.4 新增 AC-S29：第 2～5 區擬人新手難度目標（Balance Difficulty Targets）。驗收：修改前執行並記下現在的數字（預期第 3～5 區不符合「每區平均 ≤ 90 秒」）"
+       }
+      ]
+     },
+     {
+      "title": "2. 矮台面與配置",
+      "items": [
+       {
+        "done": true,
+        "text": "2.1 All Layouts Use The Short Table 與 Fewer Bumpers In Later Districts：第 2～5 區配置改成 `top` 320、照設計表重新擺彈跳柱、阿鰭與彈力牆（Fish Bumper A-Fin、Rubber Rails）。驗收：AC-S27 通過、AC-S30 的彈跳柱數量通過、AC-S7（卡球）與 AC-S19（柱離磚）通過 [after: 1.1, 1.3]"
+       }
+      ]
+     },
+     {
+      "title": "3. 難度元件",
+      "items": [
+       {
+        "done": true,
+        "text": "3.1 Ball Size Per District：`SR.ballRadiusFor(n)` 與 `world.ballRadius`，遊戲與 `playStage` 都套用。驗收：AC-S30 的球大小通過 [after: 1.3]"
+       },
+       {
+        "done": true,
+        "text": "3.2 Paddle Size By District：第 4、5 區一般關用 S。驗收：AC-S30 的滑板大小通過 [after: 1.3]"
+       },
+       {
+        "done": true,
+        "text": "3.3 Harder Bricks From District 3：拿掉第 4、5 區 −1 血（第 3～5 區 +1 血量測太難，不採用），亂數順序不變。驗收：AC-S30 的磚血通過 [after: 1.3]"
+       },
+       {
+        "done": true,
+        "text": "3.5 Hide Ball Guides In Later Districts：第 3 區彈道預覽改 0（Per-District Assist Schedule）；球的拖尾光第 1、2 區 8 點、第 3 區 4 點、第 4、5 區 0（Ball Trail By District）。驗收：AC-S30 的預覽秒數與拖尾長度通過 [after: 1.3]"
+       },
+       {
+        "done": true,
+        "text": "3.4 Boost Pads Point Upward：加速帶的物理、事件、霓虹箭頭外觀與音效。驗收：AC-S28 通過；手機截圖看得到加速帶 [after: 1.2, 2.1]"
+       }
+      ]
+     },
+     {
+      "title": "4. 量難度並調整",
+      "items": [
+       {
+        "done": true,
+        "text": "4.1 Difficulty Measured Per District（Rising Difficulty Measured At Human Speed；結果記在 Measured Final Difficulty Values）：跑 AC-S29，沒達標就依設計的順序調整並記錄每次數字，定案後用 `/spectra-ingest` 把最終數值寫回規則書。驗收：AC-S29、AC-S20、AC-S8b 通過 [after: 2.1, 3.1, 3.2, 3.3, 3.4, 3.5]"
+       }
+      ]
+     },
+     {
+      "title": "5. 收尾",
+      "items": [
+       {
+        "done": true,
+        "text": "5.1 全部測試通過並部署：`?v=` 升到 3.7.0、測試頁全過、Godot 9 項全過、`tools/deploy.ps1` 部署、線上測試頁全過；更新 Obsidian F05／F13／F15 與數值總表。驗收：線上測試頁全過，企劃在手機試玩第 3～5 區 [after: 4.1]"
+       }
+      ]
+     }
+    ],
+    "total": 12,
+    "done": 12,
+    "hasApprovalItem": false,
+    "approved": false,
+    "approvalNote": "",
+    "next": ""
+   },
+   "status": "已完成"
+  },
+  {
+   "id": "level-config-table",
+   "folder": "2026-10-05-level-config-table",
+   "archived": true,
+   "date": "2026-10-05",
+   "title": "關卡改由企劃的關卡設定表決定",
+   "why": "現在每一關的磚塊圖案、磚血、道具磚數量、台面配置、滑板與球的大小、首領數值，全部由程式裡的公式自動產生（`SR.buildStage`、`SR.layoutFor`、`SR.paddleSizeFor`…）。企劃想調某一關，只能請 AI 改公式，而且一改就影響很多關。正式的遊戲開發是由企劃逐關調配，所以要把這些數值搬到企劃自己能編輯的「關卡設定表」，程式只負責照表演出。",
+   "what": "- 新增 **關卡設定表**（Google 試算表，放在團隊的 Google Drive）：一關一列，企劃逐關填寫磚塊圖案、道具、難度元件、首領數值\n- 新增 **磚塊圖案編輯器**（網頁）：在 9 欄格子上點選畫出這一關的磚（血量 1～5、油漆桶、道具磚），畫好複製回試算表\n- 遊戲改成讀關卡設定表的匯出檔（`web/street/levels.json`），不再用公式產生關卡\n- 企劃說「**同步關卡表**」：AI 讀試算表 → 檢查「不能壞掉的規則」（不卡球、柱子不貼磚、磚放得進台面、首領打得倒、數值在合理範圍）→ 跑測試 → 部署\n- 第一版關卡表 = 目前遊戲的 50 關，換成讀表後遊戲玩起來完全一樣\n- **BREAKING** 難度目標（第 1 區新手每關 ≤ 1 顆、每區越來越難）改成「只報告、不擋部署」，難度由企劃試玩判斷",
+   "confirm": "",
+   "breaking": true,
+   "capabilities": [
+    "art-presentation",
+    "boss-mr-grey",
+    "bricks-and-stages",
+    "core-game-loop",
+    "difficulty-balance",
+    "level-config",
+    "newbie-assist",
+    "paddle-control",
+    "table-layout"
+   ],
+   "artifacts": {
+    "proposal": true,
+    "specs": true,
+    "design": true,
+    "tasks": true
+   },
+   "tasks": {
+    "groups": [
+     {
+      "title": "1. 先寫測試（修改前要失敗）",
+      "items": [
+       {
+        "done": true,
+        "text": "1.1 新增 AC-S36（First Table Reproduces The Game）：用 `SR.LEVELS` 建的 50 關，跟 `SR.generateStage(n)` 與 v3.7.1 每區函式產生的格子、台面、滑板、球、拖尾、輔助、首領、標準時間完全相同。驗收：修改前執行，AC-S36 失敗（沒有 `SR.LEVELS`）"
+       },
+       {
+        "done": true,
+        "text": "1.2 新增 AC-S37（Level Sync Checks）：`SR.LevelCheck.validate` 對正確的表回報 0 個問題；對故意填壞的表（滑板 Q、磚血 9、球半徑 7、道具池 lazer、未知台面、首領關沒有 X、一般關有 X、排不是 9 個字）逐一列出「第幾關・哪一欄・問題」。驗收：修改前執行，AC-S37 失敗"
+       },
+       {
+        "done": true,
+        "text": "1.3 新增 AC-S38（Level Table Drives Every Stage、Brick Wall Codes、Item Pool Per Stage）：複製一份表，第 12 關改大滑板、第一排 \"333333333\"、道具池 wide，其他關不變；純數字排讀成 9 個字；\".1G.B..5.\" 變成對的格子。驗收：修改前執行，AC-S38 失敗"
+       },
+       {
+        "done": true,
+        "text": "1.4 Tests Split Into Blocking And Report：測試頁支援「報告」項目（另外一區顯示、不算進失敗）；AC-S17、AC-S20、AC-S29、AC-S30、AC-S34 改成報告，AC-S19 的相鄰台面與 AC-S28 的條數拆成報告。驗收：測試頁出現「報告」區，會擋的測試數量與原本相同或更多"
+       }
+      ]
+     },
+     {
+      "title": "2. 讀表",
+      "items": [
+       {
+        "done": true,
+        "text": "2.1 Resolved Grids Per Stage 與 First Table Reproduces The Game：`tools/levels/export.js` 用原公式產生第一版 `web/street/js/levels.js`；原公式改名 `SR.generateStage`。驗收：AC-S36 通過 [after: 1.1]"
+       },
+       {
+        "done": true,
+        "text": "2.2 Level Table Drives Every Stage：`SR.buildStage(n)` 改讀 `SR.LEVELS`（Fifty Stages In Five Districts、Brick Hit Points、Gift Bricks、Boss Spawn And Stats、Brick Wall Codes）。驗收：AC-S36、AC-S38 的磚牆部分通過，AC-S6 通過 [after: 2.1, 1.3]"
+       },
+       {
+        "done": true,
+        "text": "2.3 台面配置照表（Layout Rotation Per Stage、Pop Bumpers、Fish Bumper A-Fin、Rubber Rails、Boost Pads）：`SR.layoutFor(n)` 與台面幾何改讀 `SR.LEVELS.layouts`。驗收：AC-S7、AC-S19、AC-S27、AC-S28 通過 [after: 2.1]"
+       },
+       {
+        "done": true,
+        "text": "2.4 每關數值照表（Paddle Sizes、Ball Size Per District、Ball Trail By District、Per-District Assist Schedule）：`SR.paddleSizeFor`、`SR.ballRadiusFor`、`SR.trailFor`、`R.assistsFor` 改讀表。驗收：AC-S38 的滑板部分通過、AC-S30 報告與原本一致 [after: 2.1]"
+       },
+       {
+        "done": true,
+        "text": "2.5 Item Pool Per Stage：道具膠囊的道具從該關道具池抽。驗收：AC-S38 的道具池部分通過、AC-S33 通過 [after: 2.2]"
+       }
+      ]
+     },
+     {
+      "title": "3. 同步與編輯器",
+      "items": [
+       {
+        "done": true,
+        "text": "3.1 Level Sync Checks 與 Sync Blocks Only Breaking Problems：`web/street/js/levelcheck.js`（欄位、範圍、字元、首領位置檢查）。驗收：AC-S37 通過 [after: 1.2]"
+       },
+       {
+        "done": true,
+        "text": "3.2 Sync Downloads CSV And Shows The Diff：`tools/levels/sync.js` 讀 `tools/levels/in/` 的兩份 CSV（base64）→ 檢查 → 跟目前 `levels.js` 比對列出差異 → 寫出新的 `levels.js`；`tools/levels/in/` 不進 git。驗收：用 Drive 實際下載兩份表執行一次，0 個問題、差異 0 關 [after: 3.1, 2.1]"
+       },
+       {
+        "done": true,
+        "text": "3.3 Brick Pattern Editor 與 Pattern Editor Copies Back To The Sheet：`web/street/editor.html`。驗收：手機與電腦截圖；選第 12 關、點格子、複製出的文字是 tab 分隔的 8 排 [after: 2.2]"
+       }
+      ]
+     },
+     {
+      "title": "4. 難度改成報告",
+      "items": [
+       {
+        "done": true,
+        "text": "4.1 Balance Difficulty Targets 與 Rising Difficulty Measured At Human Speed：AC-S20、AC-S29 顯示數字與設計目標，標成報告；AC-S8b（首領打得倒）維持會擋。驗收：測試頁報告區顯示第 1～5 區的數字 [after: 1.4]"
+       }
+      ]
+     },
+     {
+      "title": "5. 收尾",
+      "items": [
+       {
+        "done": true,
+        "text": "5.1 `CLAUDE.md` 新增「同步關卡表」流程與 Google Sheet Is The Planner Source 的 Drive 檔案 ID；`?v=` 升版；測試頁全部會擋的測試通過；`tools/deploy.ps1` 部署；線上測試頁通過。驗收：線上測試頁會擋的測試全過，報告區有數字 [after: 2.3, 2.4, 2.5, 3.2, 3.3, 4.1]"
+       }
+      ]
+     }
+    ],
+    "total": 14,
+    "done": 14,
+    "hasApprovalItem": false,
+    "approved": false,
+    "approvalNote": "",
+    "next": ""
+   },
+   "status": "已完成"
+  },
+  {
+   "id": "layout-editor",
+   "folder": "2026-10-05-layout-editor",
+   "archived": true,
+   "date": "2026-10-05",
+   "title": "關卡編輯器加台面模式",
+   "why": "關卡設定表上線後，磚牆可以用編輯器畫，但台面上的彈力牆、中柱、加速帶、阿鰭還是只能在「台面配置表」填座標（例如「78,664; 282,664」）。企劃很難想像座標對應到哪裡，也不知道放了會不會貼到磚或卡球。企劃要求這些也要能直接編輯。",
+   "what": "- 磚塊圖案編輯器加一個「台面」模式，在台面上直接操作：\n  - **中柱**：點一下新增、拖曳移動、選取後刪除；預設左右對稱（放一顆左邊的、右邊自動出現一顆），可以關掉\n  - **彈力牆**：新增一段、拖曳兩端改長度和角度、整段拖曳移動、刪除\n  - **加速帶**：新增、拖曳移動、刪除\n  - **阿鰭的游泳路線**：新增或拿掉阿鰭；拖曳改高度和左右範圍；速度用數字輸入\n- 即時提醒：中柱、阿鰭、加速帶離磚太近（用這個台面的每一關都檢查）、超出台面、太靠近滑板；按「檢查卡球」會跑跟同步時一樣的卡球檢查\n- 共用台面：顯示「這個台面用在第幾關」，可以選「直接改（影響這些關）」或「另存成新台面」（取新代號，只給這一關用）\n- 「複製」：複製成台面配置表的一列（代號、名稱、中柱、阿鰭、彈力牆、加速帶），貼回試算表；另存新台面時會提醒到關卡設定表把這一關的「台面配置」改成新代號",
+   "confirm": "",
+   "breaking": false,
+   "capabilities": [
+    "level-config"
+   ],
+   "artifacts": {
+    "proposal": true,
+    "specs": true,
+    "design": true,
+    "tasks": true
+   },
+   "tasks": {
+    "groups": [
+     {
+      "title": "1. 先寫測試（修改前要失敗）",
+      "items": [
+       {
+        "done": true,
+        "text": "1.1 新增 AC-S41（Table Layout Editor）：在看不見的框架開 `editor.html`，用 `SR_EDITOR` 驗證：對稱開著新增 (90,700) 得到兩顆、拖曳一顆另一顆跟著動、關掉對稱只加一顆、刪除、移到磚區時提醒列出關卡、另存新台面後複製的列以新代號開頭並出現改台面配置的提醒。驗收：修改前執行，AC-S41 失敗"
+       },
+       {
+        "done": true,
+        "text": "1.2 新增 AC-S42（Copy Uses Layout Table Format）：d_tri 複製出 \"d_tri\\t雙柱\\t80,700; 280,700\\t\\t\\t82,773; 222,773\"；任何編輯後複製的列用 `SR.LevelCheck.validate` 讀回，跟編輯中的台面相同。驗收：修改前執行，AC-S42 失敗"
+       }
+      ]
+     },
+     {
+      "title": "2. 台面模式",
+      "items": [
+       {
+        "done": true,
+        "text": "2.1 Edit Mode On The Same Page：編輯器加「磚牆／台面」切換；台面模式畫出所有物件與把手、選取時顯示座標與數字欄位。驗收：手機與電腦截圖 [after: 1.1]"
+       },
+       {
+        "done": true,
+        "text": "2.2 Tools And Hit Testing 與 Mirror Axis At 180：中柱（新增、拖曳、刪除、對稱）、彈力牆（新增、拖端點、整段移動、刪除）、加速帶（新增、拖曳、刪除）、阿鰭（開關、拖高度與左右界、速度欄位）；限制在台面內。驗收：AC-S41 的新增／拖曳／刪除／對稱部分通過 [after: 2.1]"
+       },
+       {
+        "done": true,
+        "text": "2.3 Live Checks Reuse Game Geometry：即時提醒（離磚、加速帶離中柱、太靠近滑板，列出關卡）與「檢查卡球」。驗收：AC-S41 的提醒部分通過；在 d_high 按檢查卡球顯示「沒有卡球死角」 [after: 2.2]"
+       },
+       {
+        "done": true,
+        "text": "2.4 Shared Layout Choice：顯示用在哪幾關、另存成新台面（代號不重複）、提醒改關卡設定表。驗收：AC-S41 的另存部分通過 [after: 2.2]"
+       },
+       {
+        "done": true,
+        "text": "2.5 Copy Uses Layout Table Format：複製台面配置表的一列。驗收：AC-S42 通過 [after: 1.2, 2.2]"
+       }
+      ]
+     },
+     {
+      "title": "3. 收尾",
+      "items": [
+       {
+        "done": true,
+        "text": "3.1 Google Drive「使用說明」補上台面模式；AC-S7 改查台面配置表（Stuck Check Uses The Layout Table）；`?v=` 升版；測試頁會擋的測試全過；部署；線上測試頁全過。驗收：線上測試頁全過、使用說明有台面模式段落 [after: 2.3, 2.4, 2.5]"
+       }
+      ]
+     }
+    ],
+    "total": 8,
+    "done": 8,
+    "hasApprovalItem": false,
+    "approved": false,
+    "approvalNote": "",
+    "next": ""
+   },
+   "status": "已完成"
+  },
+  {
+   "id": "item-capsules",
+   "folder": "2026-10-05-item-capsules",
+   "archived": true,
+   "date": "2026-10-05",
+   "title": "道具改成掉落膠囊",
+   "why": "道具欄放在台面下方會擠壓台面（提案 `fix-item-bar-covers-table` 修過一次），而且玩家要一邊接球一邊去按下面的按鈕，操作分心。企劃決定改成經典打磚塊的做法：道具藏在磚塊裡，打破後道具會掉下來，用滑板接到就馬上生效。這樣遊玩畫面上不需要道具欄，台面永遠是最大的。",
+   "what": "- 道具磚：第 2 關起每關 2～3 塊（第 1 關是教學關，不放），首領關也有\n- 打破道具磚，會掉下一顆「道具膠囊」（上面是道具圖示），直直往下掉\n- 用滑板（經典擋板模式：擋板）接到膠囊，就立刻用掉這個道具；沒接到就消失\n- 5 種道具的效果不變（漆彈、慢動作、球保險、加一顆、寬板）\n- **BREAKING** 拿掉道具欄與道具庫存：道具不再存起來帶到下一關；打完一區送 2 個道具的「街區獎勵」也拿掉；舊存檔裡的道具不再使用",
+   "confirm": "",
+   "breaking": true,
+   "capabilities": [
+    "bricks-and-stages",
+    "core-game-loop",
+    "power-ups-and-items"
+   ],
+   "artifacts": {
+    "proposal": true,
+    "specs": true,
+    "design": true,
+    "tasks": true
+   },
+   "tasks": {
+    "groups": [
+     {
+      "title": "1. 先寫測試（修改前要失敗）",
+      "items": [
+       {
+        "done": true,
+        "text": "1.1 新增 AC-S33（Item Capsules、Item Effects）：打破滑板正上方的道具磚 → 膠囊每秒 170 px 掉落、碰到滑板生效並移除；滑板在另一邊時膠囊過 y 1000 消失且沒有效果；球穿過膠囊時兩者都不受影響。驗收：修改前執行，AC-S33 失敗"
+       },
+       {
+        "done": true,
+        "text": "1.2 新增 AC-S34（Gift Bricks）：第 1 關 0 塊、第 2～50 關每關 2～3 塊道具磚。驗收：修改前執行，AC-S34 失敗"
+       },
+       {
+        "done": true,
+        "text": "1.3 新增 AC-S35（Core Loop Stage Flow）：遊戲流程測試，第 12 關遊玩畫面沒有道具欄；打完第 10 關的街區解放畫面沒有「街區獎勵」。驗收：修改前執行，AC-S35 失敗"
+       }
+      ]
+     },
+     {
+      "title": "2. 實作",
+      "items": [
+       {
+        "done": true,
+        "text": "2.1 Gift Bricks From Stage Two：`SR.buildStage` 第 2 關起每關 2～3 塊道具磚。驗收：AC-S34 通過 [after: 1.2]"
+       },
+       {
+        "done": true,
+        "text": "2.2 Capsules Fall Straight And Ignore The Ball 與 Catch Means Touching The Paddle Or A Flipper：膠囊物理、接住與漏接事件、接到時套用道具效果。驗收：AC-S33 通過 [after: 1.1]"
+       },
+       {
+        "done": true,
+        "text": "2.3 Remove Inventory And Item Bar：拿掉道具欄、道具按鈕、庫存與街區獎勵；接到時顯示「圖示 名稱！」；第一次出現膠囊時噴噴提醒。驗收：AC-S35 通過；AC-S32 改成檢查沒有道具欄後通過 [after: 1.3, 2.2]"
+       },
+       {
+        "done": true,
+        "text": "2.4 膠囊外觀（程式繪製：圓角膠囊＋道具圖示＋發光）與接到的音效。驗收：手機截圖看得到膠囊與圖示 [after: 2.2]"
+       }
+      ]
+     },
+     {
+      "title": "3. 收尾",
+      "items": [
+       {
+        "done": true,
+        "text": "3.1 全部測試通過並部署：`?v=` 升版、測試頁全過、Godot 9 項全過、`tools/deploy.ps1` 部署、線上測試頁全過；擬人新手難度（AC-S20、AC-S8b）通過。驗收：線上測試頁全過，企劃在手機試玩 [after: 2.1, 2.3, 2.4]"
+       }
+      ]
+     }
+    ],
+    "total": 8,
+    "done": 8,
+    "hasApprovalItem": false,
+    "approved": false,
+    "approvalNote": "",
+    "next": ""
+   },
+   "status": "已完成"
+  },
+  {
+   "id": "fix-plunger-moves-paddle",
+   "folder": "2026-10-05-fix-plunger-moves-paddle",
+   "archived": true,
+   "date": "2026-10-05",
+   "title": "拉發射桿時滑板跟著跑",
+   "why": "滑板模式下，球在發射道時按住畫面往下拉發射桿，滑板也會跟著手指（或滑鼠）左右移動。玩家只是想發射，滑板卻被拉走，發射後常常接不到第一球。",
+   "what": "正在拉發射桿的那根手指（或滑鼠）不控制滑板：按下開始拉桿時不移動滑板，拉的過程中移動也不帶動滑板。放開（發射或沒拉夠）之後，滑板恢復跟著指標走。其他手指（多指觸控）仍然可以控制滑板。",
+   "confirm": "",
+   "breaking": false,
+   "capabilities": [
+    "paddle-control"
+   ],
+   "artifacts": {
+    "proposal": true,
+    "specs": true,
+    "design": true,
+    "tasks": true
+   },
+   "tasks": {
+    "groups": [
+     {
+      "title": "1. 先寫測試",
+      "items": [
+       {
+        "done": true,
+        "text": "1.1 新增 AC-S31（Paddle Input Following）：球在發射道、滑板目標 180，從畫面最左邊按下並往右下拖動拉桿，放開前滑板目標維持 180，放開後的移動會改變目標。驗收：修正前執行，AC-S31 失敗"
+       }
+      ]
+     },
+     {
+      "title": "2. 修正",
+      "items": [
+       {
+        "done": true,
+        "text": "2.1 Plunger Pointer Does Not Steer：拉桿那根指標的按下與移動不改滑板目標，放開後恢復。驗收：AC-S31 通過，其他測試維持通過 [after: 1.1]"
+       }
+      ]
+     },
+     {
+      "title": "3. 收尾",
+      "items": [
+       {
+        "done": true,
+        "text": "3.1 `?v=` 升到 3.6.3，測試頁全過、Godot 9 項全過，用 `tools/deploy.ps1` 部署，線上測試頁全過。驗收：線上測試頁全過 [after: 2.1]"
+       }
+      ]
+     }
+    ],
+    "total": 3,
+    "done": 3,
+    "hasApprovalItem": false,
+    "approved": false,
+    "approvalNote": "",
+    "next": ""
+   },
+   "status": "已完成"
+  },
+  {
+   "id": "fix-item-bar-covers-table",
+   "folder": "2026-10-05-fix-item-bar-covers-table",
+   "archived": true,
+   "date": "2026-10-05",
+   "title": "手機上道具欄蓋住台面",
+   "why": "手機上，道具欄出現後會蓋住台面最下面一段（約 30 px），剛好是發射桿和滑板線的位置，畫面變得很擠、看不清楚；道具按鈕的名字也被擠成兩行（例如「慢動／作」）。",
+   "what": "- 台面所在區域的大小一改變（包含道具欄出現或消失）就重新計算台面大小，台面永遠不會跟上方資訊列或下方道具欄重疊\n- 道具欄改成精簡的一行：圖示＋名字不換行、按鈕變矮，把空間留給台面",
+   "confirm": "",
+   "breaking": false,
+   "capabilities": [
+    "power-ups-and-items"
+   ],
+   "artifacts": {
+    "proposal": true,
+    "specs": true,
+    "design": true,
+    "tasks": true
+   },
+   "tasks": {
+    "groups": [
+     {
+      "title": "1. 先寫測試",
+      "items": [
+       {
+        "done": true,
+        "text": "1.1 新增 AC-S32（Item Use From The Item Bar）：測試框架改成 390×680，從標題進入第 12 關（有道具），檢查畫布底邊 ≤ 道具欄頂邊、畫布頂邊 ≥ 資訊列底邊。驗收：修正前執行，AC-S32 失敗"
+       }
+      ]
+     },
+     {
+      "title": "2. 修正",
+      "items": [
+       {
+        "done": true,
+        "text": "2.1 Refit On Stage Area Resize：台面區大小改變（每幀檢查）就重新計算台面大小。驗收：AC-S32 通過 [after: 1.1]"
+       },
+       {
+        "done": true,
+        "text": "2.2 Compact Item Bar：道具欄一行、名字不換行、按鈕約 36 px 高。驗收：390×680 手機截圖中道具名字都是一行，AC-S32 仍通過 [after: 2.1]"
+       }
+      ]
+     },
+     {
+      "title": "3. 收尾",
+      "items": [
+       {
+        "done": true,
+        "text": "3.1 `?v=` 升到 3.6.4，測試頁全過、Godot 9 項全過，用 `tools/deploy.ps1` 部署，線上測試頁全過。驗收：線上測試頁全過 [after: 2.2]"
+       }
+      ]
+     }
+    ],
+    "total": 4,
+    "done": 4,
+    "hasApprovalItem": false,
+    "approved": false,
+    "approvalNote": "",
+    "next": ""
+   },
+   "status": "已完成"
+  },
+  {
+   "id": "fix-baseline-bugs",
+   "folder": "2026-10-05-fix-baseline-bugs",
+   "archived": true,
+   "date": "2026-10-05",
+   "title": "修 4 個 bug（空白鍵、音效、從頭再打、跳過漫畫）",
+   "why": "盤點現有遊戲（提案 `baseline-specs`）時發現 4 個 bug，企劃決定全部修正：\n\n1. 電腦上按住空白鍵拉發射桿，常常拉不滿、甚至發射不出去\n2. 音效、音樂開關重新整理後不會記住，每次都回到「開」\n3. 已經全破的街區，地圖上的「從頭再打一次」會從第 10 關（首領關）開始\n4. 第一次看漫畫時按「跳過」，也被記成「看過」，之後不會再自動播放",
+   "what": "1. 空白鍵的重送訊號不再重新拉桿；按住會一路拉滿\n2. 開關狀態寫進存檔（`save.sfx`、`save.music`），開遊戲時套用\n3. 全破的街區按「從頭再打一次」從該區第 1 關開始；其他情況維持原本公式\n4. 漫畫完整看完才記成「看過」；按跳過不記，下次還會自動播放",
+   "confirm": "",
+   "breaking": false,
+   "capabilities": [
+    "audio-and-haptics",
+    "comics-and-story-replay",
+    "game-ui",
+    "plunger-launch"
+   ],
+   "artifacts": {
+    "proposal": true,
+    "specs": true,
+    "design": true,
+    "tasks": true
+   },
+   "tasks": {
+    "groups": [
+     {
+      "title": "1. 遊戲流程測試（Game Flow Test Harness）",
+      "items": [
+       {
+        "done": true,
+        "text": "1.1 Game Flow Test Harness：測試頁 `web/street/test.html` 在看不見的框架開 `index.html?test=1` 並執行 `SR.Tests.GAME_TESTS`；`?test=1` 時存檔用 `sprayrun.save.test`、不套用手感調整面板的個人數值。驗收：測試頁出現「遊戲流程」一段；跑完後玩家存檔 `sprayrun.save.v1` 內容沒變"
+       }
+      ]
+     },
+     {
+      "title": "2. 發射桿：按住空白鍵（Plunger Keyboard Charge）",
+      "items": [
+       {
+        "done": true,
+        "text": "2.1 新增測試 AC-S23：力道 0.6 時送出帶 repeat 的空白鍵按下，力道不歸零。驗收：修正前執行，AC-S23 失敗 [after: 1.1]"
+       },
+       {
+        "done": true,
+        "text": "2.2 Ignore Key Auto-Repeat（Plunger Keyboard Charge）：空白鍵重送訊號不再重新拉桿。驗收：AC-S23 通過 [after: 2.1]"
+       }
+      ]
+     },
+     {
+      "title": "3. 音效音樂開關（Audio Sound And Music Toggles）",
+      "items": [
+       {
+        "done": true,
+        "text": "3.1 新增測試 AC-S24：關掉音樂後重新載入遊戲，音樂仍是關。驗收：修正前執行，AC-S24 失敗 [after: 1.1]"
+       },
+       {
+        "done": true,
+        "text": "3.2 Store Audio Toggles In Save（Audio Sound And Music Toggles）：開關寫進 `save.sfx`／`save.music`，啟動時套用，舊存檔視為開。驗收：AC-S24 通過 [after: 3.1]"
+       }
+      ]
+     },
+     {
+      "title": "4. 地圖「從頭再打一次」（UI Map And Stage Select）",
+      "items": [
+       {
+        "done": true,
+        "text": "4.1 新增測試 AC-S25：`R.districtStartStage` 在已解鎖 1／6／11／51 時，第 1 區分別回傳 1／6／1／1。驗收：修正前執行，AC-S25 失敗"
+       },
+       {
+        "done": true,
+        "text": "4.2 Replay Starts At District First Stage（UI Map And Stage Select）：地圖主按鈕改用 `R.districtStartStage`。驗收：AC-S25 通過 [after: 4.1]"
+       }
+      ]
+     },
+     {
+      "title": "5. 漫畫跳過（Story Playback Schedule）",
+      "items": [
+       {
+        "done": true,
+        "text": "5.1 新增測試 AC-S26：第 1 關前的 intro 按跳過後 `save.seenComic.intro` 不存在；看完則存在。驗收：修正前執行，AC-S26 失敗 [after: 1.1]"
+       },
+       {
+        "done": true,
+        "text": "5.2 Mark Comic Seen On Completion（Story Playback Schedule）：`SR.Comic.play` 的結束回呼帶出是否跳過，只有看完才寫入看過。驗收：AC-S26 通過 [after: 5.1]"
+       }
+      ]
+     },
+     {
+      "title": "6. 收尾",
+      "items": [
+       {
+        "done": true,
+        "text": "6.1 全部測試通過並部署：`index.html`、`test.html` 的 `?v=` 升到 3.6.2，測試頁 26 項全過、Godot 9 項全過，用 `tools/deploy.ps1` 部署，線上測試頁也 26/26。驗收：線上測試頁顯示 26/26 [after: 2.2, 3.2, 4.2, 5.2]"
+       }
+      ]
+     }
+    ],
+    "total": 10,
+    "done": 10,
+    "hasApprovalItem": false,
+    "approved": false,
+    "approvalNote": "",
+    "next": ""
+   },
+   "status": "已完成"
+  },
+  {
+   "id": "baseline-specs",
+   "folder": "2026-10-05-baseline-specs",
+   "archived": true,
+   "date": "2026-10-05",
+   "title": "把現有遊戲寫成 16 份規則書",
+   "why": "噴漆闖關目前的規則散在 Obsidian 的主架構規劃書與 F01～F15 功能規劃書，只有企劃這台電腦看得到，也沒有逐條對應到自動測試。團隊要改用 Spectra 的「提案」流程，第一步必須先把「遊戲現在已經是這樣」寫成正式規則書，之後每張提案才有比對的基準。",
+   "what": "- 把主架構規劃書與 F01～F15 的現有行為，寫成 16 份 Spectra 規則書（每份一個功能）\n- 每條規則都寫成「當……就要……」的情境，並標出目前由哪一個自動測試檢查\n- 找出還沒有測試的情境，補上測試或寫明為什麼不用測（例如純外觀）\n- 遊戲行為完全不改；只新增規則書與缺少的測試",
+   "confirm": "",
+   "breaking": false,
+   "capabilities": [
+    "art-presentation",
+    "audio-and-haptics",
+    "boss-mr-grey",
+    "bricks-and-stages",
+    "comics-and-story-replay",
+    "core-game-loop",
+    "difficulty-balance",
+    "flipper-control",
+    "game-ui",
+    "medals-and-achievements",
+    "newbie-assist",
+    "opening-animation",
+    "paddle-control",
+    "plunger-launch",
+    "power-ups-and-items",
+    "table-layout"
+   ],
+   "artifacts": {
+    "proposal": true,
+    "specs": true,
+    "design": true,
+    "tasks": true
+   },
+   "tasks": {
+    "groups": [
+     {
+      "title": "1. 規則書內容與程式一致（Baseline Follows Current Code）",
+      "items": [
+       {
+        "done": true,
+        "text": "1.1 核心與操作 5 份規則書寫的是程式目前的行為：Core Loop Stage Flow、Steel Ball Physics、Drain Is A Normal Risk With No Drain-Blocking Post、Stage Clear Condition、Run Hearts And Continue、Rising Difficulty Measured At Human Speed、Fairy-Tale Story Tone、Opening First-Launch Autoplay、Opening Insert Coin Start、Opening Timed Beats、Opening Skip、Opening Replay From Title、Paddle Input Following、Paddle Movement Range、Paddle Aimed Rebound、Paddle Sizes、Paddle Hit Feedback And Combo Reset、Flipper Input Mapping、Flipper Stroke Motion、Flipper Shot Power、Flipper Mode Bottom Geometry、Flipper Timing Hint、Flipper Wide Item、Flippers Visible When Needed、Plunger Ready State、Plunger Drag Pull、Plunger Keyboard Charge、Plunger Minimum Pull、Plunger Launch Speed、Plunger Launch Preview。驗收：每條規則的數值能在 `tuning.js`／`data.js`／`game.js`／`physics.js` 找到對應，`spxa validate baseline-specs` 通過"
+       },
+       {
+        "done": true,
+        "text": "1.2 台面與關卡 5 份規則書寫的是程式目前的行為：Table Height Per District、Layout Rotation Per Stage、Pop Bumpers、Fish Bumper A-Fin、Boss Stages Use No Fish、Rubber Rails、Layouts Have No Stuck Spots、Fifty Stages In Five Districts、Text-Shaped Brick Patterns、Brick Grid Placement、Brick Hit Points、Brick Damage And Bounce、Gift Bricks、Stage Clear、Boss Spawn And Stats、Boss Side To Side Movement、Boss Brick Refill、Boss Enrage、Boss Damage And Defeat、Boss Stage Rules、Upgrade Draw On Stage Clear、Upgrade Can Effects、Mid-District Start Upgrade Backfill、Item Inventory And Sources、Item Use From The Item Bar、Item Effects、Stage Medal By Hearts Lost、Best Medal Is Kept、Achievement Catalog、Achievement Unlock Conditions、Achievement Unlock Is Permanent。驗收：同 1.1"
+       },
+       {
+        "done": true,
+        "text": "1.3 輔助、劇情、介面、表現與平衡 6 份規則書寫的是程式目前的行為：Per-District Assist Schedule、Trajectory Preview、Landing Ring And Flipper Timing Hint、Extended Ball Save、Finisher Assist、Interactive Tutorial、Comic Panel Reveal Sequence、Comic Tap Advance And Skip、Story Playback Schedule、Story Replay Gallery、Fairy Tale Story Content、Comic Layout Constraints、UI Opening Gate And Title Screen、UI Map And Stage Select、UI Pause Menu、UI Stage Results Screen、UI Game Over Continue Screen、UI Control Select、Art Controls Always Visible When Acting、Art Stage Intro Camera、Art Stage Clear Cinematic、Art Paint Splats Persist For The Stage、Audio Sound And Music Toggles、Haptics Vibration Toggle、Haptics Event Vibration Patterns、Audio Sound Effects、Audio Adaptive Music、Balance Human-Like Bot Profiles、Balance Difficulty Targets、Tuning Panel Live Sliders、Tuning Persistence And Reset、Tuning Practice Mode、Tuning Copy Changed Values、Tuning Panel Excluded From Test Page。驗收：同 1.1"
+       }
+      ]
+     },
+     {
+      "title": "2. 中文說明（English Rules With Chinese Notes）",
+      "items": [
+       {
+        "done": true,
+        "text": "2.1 每條規則下面都有一行 `> 中文：` 白話說明，企劃不用懂英文也看得懂。驗收：16 份規則書共 95 條規則、95 行中文說明（用搜尋計數），`spxa analyze baseline-specs` 沒有語言相關的 Critical"
+       }
+      ]
+     },
+     {
+      "title": "3. 情境與測試對照（Scenario To Test Mapping）",
+      "items": [
+       {
+        "done": true,
+        "text": "3.1 16 份 `coverage/<capability>.md` 把每個情境歸成「已有測試／不需測試／缺測試」，引用的測試名稱在 `web/street/js/tests.js` 或 `tests/run_tests.gd` 真的存在。驗收：抽查每份至少 1 個「已有測試」列"
+       },
+       {
+        "done": true,
+        "text": "3.2 遊戲行為沒有改變。驗收：`web/street/test.html` 22/22 通過、Godot `tests/run_tests.gd` 9/9 通過"
+       }
+      ]
+     },
+     {
+      "title": "4. 企劃確認",
+      "items": [
+       {
+        "done": true,
+        "text": "4.1 企劃讀過 16 份規則書的中文說明，確認「遊戲現在就是這樣」。驗收：企劃在對話中回覆確認"
+       },
+       {
+        "done": true,
+        "text": "4.2 把盤點發現的「文件與程式不一致」與疑似 bug（例如按住空白鍵發射桿一直歸零、音效開關重新整理後不記得、已通關街區的「從頭再打一次」從第 10 關開始、跳過漫畫也算看過）整理成清單交給企劃決定。驗收：企劃對每一項選「改程式／改規則／不處理」，選「改」的各開一張提案"
+       }
+      ]
+     },
+     {
+      "title": "5. 功能規劃書改為參考用（Feature Docs Become Reference）",
+      "items": [
+       {
+        "done": true,
+        "text": "5.1 歸檔後 Obsidian `彈珠專案/01 功能規劃書` 每份最上面註明「正式規則在 `docs/spectra/specs/<capability>/spec.md`」，`CLAUDE.md` 的文件規則改成以 `docs/spectra/specs/` 為準。驗收：開啟任一份功能規劃書看得到註記；`CLAUDE.md` 的文件規則段落提到 `docs/spectra/specs/`"
+       }
+      ]
+     }
+    ],
+    "total": 9,
+    "done": 9,
+    "hasApprovalItem": false,
+    "approved": false,
+    "approvalNote": "",
+    "next": ""
+   },
+   "status": "已完成"
+  }
+ ],
+ "specs": [
+  {
+   "name": "art-presentation",
+   "purpose": "所有關卡玩的時候鏡頭都固定不動，整個台面、滑板／擋板一直都看得到；只有開場和過關演出會短暫運鏡，結束後回到原位。",
+   "requirements": 5,
+   "scenarios": 7,
+   "reqs": [
+    {
+     "name": "Art Controls Always Visible When Acting",
+     "zh": "所有關卡玩的時候鏡頭都固定不動，整個台面、滑板／擋板一直都看得到；只有開場和過關演出會短暫運鏡，結束後回到原位。",
+     "scenarios": [
+      "Flippers visible whenever action is needed",
+      "No stage scrolls during play"
+     ]
+    },
+    {
+     "name": "Art Stage Intro Camera",
+     "zh": "每關開場有 2.3 秒的 3D 俯衝鏡頭，顯示關卡編號、名稱和台面；首領關會拉近看首領；點一下可以快轉。",
+     "scenarios": [
+      "Skip the intro"
+     ]
+    },
+    {
+     "name": "Art Stage Clear Cinematic",
+     "zh": "打碎最後一塊磚時會慢動作特寫，接著定格、整面牆噴滿顏色、出現 WALL CLEARED!，然後才到結算。",
+     "scenarios": [
+      "Clear cinematic timing"
+     ]
+    },
+    {
+     "name": "Art Paint Splats Persist For The Stage",
+     "zh": "打碎的磚會在牆上留下噴漆，整關都不會消失，下一關才重新開始。",
+     "scenarios": [
+      "Splats survive a ball loss",
+      "Splats reset on a new stage"
+     ]
+    },
+    {
+     "name": "Ball Trail By District",
+     "zh": "球後面的拖尾光長度看關卡表「拖尾」欄，0＝沒有；第一版是第 1、2 區 8、第 3 區 4、第 4、5 區 0。",
+     "scenarios": [
+      "Trail length from the table"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "audio-and-haptics",
+   "purpose": "音效和音樂可以在暫停選單（音樂也能在標題）開關，馬上生效，而且會記在存檔裡，重新整理後維持你選的設定。",
+   "requirements": 5,
+   "scenarios": 6,
+   "reqs": [
+    {
+     "name": "Audio Sound And Music Toggles",
+     "zh": "音效和音樂可以在暫停選單（音樂也能在標題）開關，馬上生效，而且會記在存檔裡，重新整理後維持你選的設定。",
+     "scenarios": [
+      "Mute sound effects from pause",
+      "Toggles survive a reload"
+     ]
+    },
+    {
+     "name": "Haptics Vibration Toggle",
+     "zh": "震動可以在暫停選單關掉，會記在存檔裡；打開的時候會震一下讓你知道。",
+     "scenarios": [
+      "Vibration off persists"
+     ]
+    },
+    {
+     "name": "Haptics Event Vibration Patterns",
+     "zh": "各種事件的震動長度照下表，碎磚連擊越高震越久，最多 38ms。",
+     "scenarios": [
+      "Brick break vibration grows with combo"
+     ]
+    },
+    {
+     "name": "Audio Sound Effects",
+     "zh": "19 種音效全部用程式即時合成，連擊越高碎磚聲音越高。",
+     "scenarios": [
+      "Higher combo, higher break sound"
+     ]
+    },
+    {
+     "name": "Audio Adaptive Music",
+     "zh": "背景音樂每區速度不同，連擊越多、首領關或首領生氣時會加樂器，換小節時才切換。",
+     "scenarios": [
+      "Combo raises intensity"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "boss-mr-grey",
+   "purpose": "首領出現在關卡表標 X 的那一排，血量、速度、補磚間隔都照關卡表；第一版的數值跟原本一樣。",
+   "requirements": 6,
+   "scenarios": 11,
+   "reqs": [
+    {
+     "name": "Boss Spawn And Stats",
+     "zh": "首領出現在關卡表標 X 的那一排，血量、速度、補磚間隔都照關卡表；第一版的數值跟原本一樣。",
+     "scenarios": [
+      "Boss stats come from the table",
+      "Planner changes a boss"
+     ]
+    },
+    {
+     "name": "Boss Side To Side Movement",
+     "zh": "灰先生在上方左右來回移動，碰到兩側就轉向。",
+     "scenarios": [
+      "Boss turns at the right side"
+     ]
+    },
+    {
+     "name": "Boss Brick Refill",
+     "zh": "灰先生每隔幾秒會在身體下方補 3 塊灰磚（格子有磚就不補），後面的區補的磚比較硬。",
+     "scenarios": [
+      "Refill after the first interval",
+      "Occupied cells are not refilled"
+     ]
+    },
+    {
+     "name": "Boss Enrage",
+     "zh": "灰先生血量剩不到 4 成會暴怒：移動變快 1.5 倍、補磚間隔變成 0.75 倍。",
+     "scenarios": [
+      "Enrage threshold"
+     ]
+    },
+    {
+     "name": "Boss Damage And Defeat",
+     "zh": "球打灰先生會扣血並一定彈回（穿透漆對他無效），漆彈也炸得到他；打倒就過關、這區結束。",
+     "scenarios": [
+      "Pierce does not pass through the boss",
+      "All five bosses are beatable"
+     ]
+    },
+    {
+     "name": "Boss Stage Rules",
+     "zh": "首領關滑板用小尺寸、沒有阿鰭、沒有收尾輔助；每次進首領關都會播首領前漫畫（續關和重玩除外）。",
+     "scenarios": [
+      "Small paddle on boss stages",
+      "Finisher assist stays off",
+      "Pre-boss comic replays"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "bricks-and-stages",
+   "purpose": "遊戲有 5 區 × 10 關共 50 關，每區第 10 關是首領關；每一關照關卡設定表建立，表不變磚就不變。",
+   "requirements": 6,
+   "scenarios": 11,
+   "reqs": [
+    {
+     "name": "Fifty Stages In Five Districts",
+     "zh": "遊戲有 5 區 × 10 關共 50 關，每區第 10 關是首領關；每一關照關卡設定表建立，表不變磚就不變。",
+     "scenarios": [
+      "Boss only on every 10th stage",
+      "Stage building is repeatable"
+     ]
+    },
+    {
+     "name": "Brick Grid Placement",
+     "zh": "磚塊排在 9 欄的格子裡，被頂部圓弧或牆切到的格子會自動略過，但每關至少保留 6 成的磚。",
+     "scenarios": [
+      "All 50 stages fit their tables"
+     ]
+    },
+    {
+     "name": "Brick Hit Points",
+     "zh": "每塊磚的血就是關卡表磚牆上寫的數字（1～5）；油漆桶和道具磚一律 1 血。",
+     "scenarios": [
+      "HP comes from the table"
+     ]
+    },
+    {
+     "name": "Brick Damage And Bounce",
+     "zh": "球打到磚會扣血並彈回（最少 180 的彈力，不會黏在磚上），血歸零磚就碎掉並加分；油漆桶碎掉會炸周圍 8 格各 1 血並可連鎖。",
+     "scenarios": [
+      "Two hits destroy a 2 HP brick",
+      "Slow touches do not damage",
+      "Bucket damages its neighbors"
+     ]
+    },
+    {
+     "name": "Gift Bricks",
+     "zh": "道具磚就是關卡表上標 G 的格子（1 血），打碎掉下一顆道具膠囊；第一版表是第 2 關起每關 2～3 塊、第 1 關沒有。",
+     "scenarios": [
+      "Gift bricks follow the table"
+     ]
+    },
+    {
+     "name": "Stage Clear",
+     "zh": "一般關卡打碎全部磚才過關，首領關打倒灰先生就過關；過關會開下一關，一般關還會回 1 顆愛心（最多 5 顆）。",
+     "scenarios": [
+      "Last brick clears the stage",
+      "Hearts are capped at five",
+      "Boss stage clears on boss defeat"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "comics-and-story-replay",
+   "purpose": "每一格依序出現：先框和背景，再角色一個一個跳出來，再旁白，最後對話框，字像打字機一樣一個一個出來。",
+   "requirements": 6,
+   "scenarios": 13,
+   "reqs": [
+    {
+     "name": "Comic Panel Reveal Sequence",
+     "zh": "每一格依序出現：先框和背景，再角色一個一個跳出來，再旁白，最後對話框，字像打字機一樣一個一個出來。",
+     "scenarios": [
+      "Reveal order inside one panel"
+     ]
+    },
+    {
+     "name": "Comic Tap Advance And Skip",
+     "zh": "看漫畫時點一下先把這一格補完，再點一下出下一格、翻頁；右上「跳過劇情」可以整段跳過。",
+     "scenarios": [
+      "First tap completes the panel",
+      "Skip ends all queued segments"
+     ]
+    },
+    {
+     "name": "Story Playback Schedule",
+     "zh": "每段漫畫第一次一定播，看完才算「看過」；按跳過的話下次還會再播。首領前的漫畫每次都播；重玩這關和投幣續關不播。",
+     "scenarios": [
+      "Seen segment is not replayed before a stage",
+      "Skipped segment plays again",
+      "Boss segment plays every time",
+      "Fish appears only after its comic"
+     ]
+    },
+    {
+     "name": "Story Replay Gallery",
+     "zh": "地圖上的「劇情回放」列出 16 段漫畫，看過的可以點來重看，沒看過的顯示「還沒看到」。",
+     "scenarios": [
+      "Replay a seen segment",
+      "Unseen segment is locked",
+      "Titles and comics match one to one"
+     ]
+    },
+    {
+     "name": "Fairy Tale Story Content",
+     "zh": "故事是童話，「很久很久以前」開頭、「從此以後」結尾，反派叫灰先生；畫面上不能出現「起承轉合」。",
+     "scenarios": [
+      "Fairy tale framing",
+      "Stage label hides the story structure"
+     ]
+    },
+    {
+     "name": "Comic Layout Constraints",
+     "zh": "每頁最多 5 格、格子不重疊不出頁；對話框最多 32 字、不出格、不蓋到臉，說話的人一定在格子裡。",
+     "scenarios": [
+      "All pages pass layout checks"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "core-game-loop",
+   "purpose": "玩家從地圖選關 → 看漫畫 → 關卡開場 → 開打 → 過關演出 → 結算畫面，結算後可以選「重玩／下一關／回地圖」；首領關打完會到「街區解放」畫面，第 50 關打完看結局。",
+   "requirements": 8,
+   "scenarios": 25,
+   "reqs": [
+    {
+     "name": "Core Loop Stage Flow",
+     "zh": "玩家從地圖選關 → 看漫畫 → 關卡開場 → 開打 → 過關演出 → 結算畫面，結算後可以選「重玩／下一關／回地圖」；首領關打完會到「街區解放」畫面，第 50 關打完看結局。",
+     "scenarios": [
+      "Any open stage can be selected from the map",
+      "Comic plays before a stage only when due",
+      "Stage intro can be skipped",
+      "Clearing a normal stage grants an upgrade and offers choices",
+      "Clearing a boss stage ends the district"
+     ]
+    },
+    {
+     "name": "Steel Ball Physics",
+     "zh": "鋼珠有重力、會反彈、速度有上限，每一幀切成 8 小步算碰撞，球再快都不會穿牆。",
+     "scenarios": [
+      "Ball at maximum speed does not tunnel",
+      "Ball speed never exceeds the cap",
+      "Ball hitting a brick bounces and damages it"
+     ]
+    },
+    {
+     "name": "Drain Is A Normal Risk With No Drain-Blocking Post",
+     "zh": "球從底部掉下去就是掉球，這是正常風險；台面出口絕對不能加「擋住出口的救球柱」。",
+     "scenarios": [
+      "Largest ball drains through the center in flipper mode",
+      "Paddle mode has no bottom obstacles",
+      "Ball missed by the paddle drains",
+      "Only the drained ball is removed in multiball"
+     ]
+    },
+    {
+     "name": "Stage Clear Condition",
+     "zh": "一般關卡打碎所有灰磚就過關；首領關打倒灰先生就過關（剩下的磚會一起碎掉）。",
+     "scenarios": [
+      "Normal stage clears on last brick",
+      "Boss stage clears on boss defeat",
+      "Stage 1 is clearable by the auto player"
+     ]
+    },
+    {
+     "name": "Run Hearts And Continue",
+     "zh": "一輪 3 顆愛心，掉球扣 1 顆，一般關過關回 1 顆（最多 5 顆）；愛心用完可以投幣從這一關重來，強化保留、分數減半、這關最多銅牌。",
+     "scenarios": [
+      "Drain outside ball save costs a heart",
+      "Drain inside ball save is free",
+      "Clearing restores a heart up to 5",
+      "Continue after game over"
+     ]
+    },
+    {
+     "name": "Rising Difficulty Measured At Human Speed",
+     "zh": "每關難度由企劃在關卡表決定；難度一定用「模擬真人手速」的自動玩家量，每次同步都會報告，但不會擋部署。",
+     "scenarios": [
+      "Every table is short",
+      "Difficulty is reported"
+     ]
+    },
+    {
+     "name": "Fairy-Tale Story Tone",
+     "zh": "故事是童話（「很久很久以前」開頭、「從此以後」結尾），不搞笑；畫面上不顯示「起承轉合」。",
+     "scenarios": [
+      "Comic text follows fairy-tale rules",
+      "HUD hides act labels"
+     ]
+    },
+    {
+     "name": "Ball Size Per District",
+     "zh": "每關的球大小看關卡表「球半徑」欄（8～16）；「大罐」強化照樣每級再大 1.5。",
+     "scenarios": [
+      "Base radius from the table",
+      "Big upgrade adds to the stage radius"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "difficulty-balance",
+   "purpose": "用「像人」的自動玩家量難度：新手、普通、熟練三種，反應時間和瞄準誤差不同，不用機器的完美手速。",
+   "requirements": 7,
+   "scenarios": 10,
+   "reqs": [
+    {
+     "name": "Balance Human-Like Bot Profiles",
+     "zh": "用「像人」的自動玩家量難度：新手、普通、熟練三種，反應時間和瞄準誤差不同，不用機器的完美手速。",
+     "scenarios": [
+      "Novice reacts slower than skilled"
+     ]
+    },
+    {
+     "name": "Balance Difficulty Targets",
+     "zh": "新手難度（第 1 區、第 2～5 區）只當報告顯示，跟設計目標比較，但不擋部署；5 個首領一定要打得倒，這項會擋。",
+     "scenarios": [
+      "District 1 novice report",
+      "Later districts report",
+      "Bosses are beatable"
+     ]
+    },
+    {
+     "name": "Tuning Panel Live Sliders",
+     "zh": "暫停 → 手感調整，拉滑桿馬上生效，改過的項目會變色並顯示原本的數字。",
+     "scenarios": [
+      "Slider changes physics immediately"
+     ]
+    },
+    {
+     "name": "Tuning Persistence And Reset",
+     "zh": "調過的數值會存在這台裝置，重新整理還在；按「恢復預設」全部回到原本的數字。",
+     "scenarios": [
+      "Tuned value survives reload",
+      "Reset clears tuning"
+     ]
+    },
+    {
+     "name": "Tuning Practice Mode",
+     "zh": "打開練習模式後掉球不扣愛心，方便一直試手感。",
+     "scenarios": [
+      "Drain in practice mode"
+     ]
+    },
+    {
+     "name": "Tuning Copy Changed Values",
+     "zh": "按「複製數值」會把改過的項目整理成一段文字，貼給 AI 說「套用調參」就能寫回正式數值。",
+     "scenarios": [
+      "Nothing changed"
+     ]
+    },
+    {
+     "name": "Tuning Panel Excluded From Test Page",
+     "zh": "自動測試頁不載入手感調整面板，測試永遠用正式數值。",
+     "scenarios": [
+      "Test page uses official values"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "flipper-control",
+   "purpose": "經典擋板模式點左半邊／右半邊（電腦 Z、← 或 /、→）控制左右擋板；球在發射道時，按右半邊是拉發射桿，不是揮右擋板。",
+   "requirements": 7,
+   "scenarios": 15,
+   "reqs": [
+    {
+     "name": "Flipper Input Mapping",
+     "zh": "經典擋板模式點左半邊／右半邊（電腦 Z、← 或 /、→）控制左右擋板；球在發射道時，按右半邊是拉發射桿，不是揮右擋板。",
+     "scenarios": [
+      "Touch halves control each flipper",
+      "Multi-touch keeps a flipper up",
+      "Right-half press pulls the plunger when a ball is waiting"
+     ]
+    },
+    {
+     "name": "Flipper Stroke Motion",
+     "zh": "擋板往上揮每秒 1700°、放下每秒 800°，從靜止到全舉 35.4 毫秒，跟 v2 手感一樣。",
+     "scenarios": [
+      "Full lift time matches v2",
+      "Release returns the flipper slower than it rose"
+     ]
+    },
+    {
+     "name": "Flipper Shot Power",
+     "zh": "擋板長 72，打在越靠尖端的地方球飛越快；尖端擊球約每秒 1900 px。",
+     "scenarios": [
+      "Tip shot speed matches v2",
+      "Tip is faster than base",
+      "Flipper contact resets the combo"
+     ]
+    },
+    {
+     "name": "Flipper Mode Bottom Geometry",
+     "zh": "擋板模式底部是「牆 → 導球片 → 彈弓 → 漏斗 → 擋板」連成一條線，沒有外線道；最大的球也能從兩支擋板中間掉下去，任何台面配置都不會卡球。",
+     "scenarios": [
+      "Largest ball fits through the flipper gap",
+      "No stuck spots on any layout",
+      "Sling kicks the ball"
+     ]
+    },
+    {
+     "name": "Flipper Timing Hint",
+     "zh": "第 1、2 區有「擋板時機提示」：球進到某一支擋板打得到的範圍時，那支擋板會發光。",
+     "scenarios": [
+      "Hint lights the reachable flipper in district 1",
+      "No hint from district 3"
+     ]
+    },
+    {
+     "name": "Flipper Wide Item",
+     "zh": "擋板模式用道具「寬板」，兩支擋板變長 14 px，維持 12 秒後變回來。",
+     "scenarios": [
+      "Wide item lengthens then restores"
+     ]
+    },
+    {
+     "name": "Flippers Visible When Needed",
+     "zh": "需要操作的時候（球在發射道、球接近擋板、球往下掉），鏡頭一定拉回最底下，兩支擋板完整看得到。",
+     "scenarios": [
+      "Camera shows flippers when a ball approaches"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "game-ui",
+   "purpose": "第一次打開遊戲先看投幣開場（約 7 秒，可跳過），之後直接到標題；標題可以開始、看成就、開關音樂、重看開場、換操作方式。",
+   "requirements": 6,
+   "scenarios": 12,
+   "reqs": [
+    {
+     "name": "UI Opening Gate And Title Screen",
+     "zh": "第一次打開遊戲先看投幣開場（約 7 秒，可跳過），之後直接到標題；標題可以開始、看成就、開關音樂、重看開場、換操作方式。",
+     "scenarios": [
+      "First launch shows the opening",
+      "Later launches skip the opening",
+      "Skip the opening"
+     ]
+    },
+    {
+     "name": "UI Map And Stage Select",
+     "zh": "地圖有 5 區、每區 10 格，打過或下一關的格子都能直接點來玩；全破的街區按「從頭再打一次」會從第 1 關開始。",
+     "scenarios": [
+      "Pick an already cleared stage",
+      "Locked stage cannot be picked",
+      "Replay a finished district from its first stage"
+     ]
+    },
+    {
+     "name": "UI Pause Menu",
+     "zh": "遊戲中按暫停可以繼續、開關音效／音樂／震動、打開手感調整，或放棄這一輪回地圖。",
+     "scenarios": [
+      "Pause freezes the table",
+      "Pause is unavailable outside play"
+     ]
+    },
+    {
+     "name": "UI Stage Results Screen",
+     "zh": "過關後看到獎牌和成績，可以選下一關、重玩這關或回地圖。",
+     "scenarios": [
+      "Retry keeps the run",
+      "Boss stage result"
+     ]
+    },
+    {
+     "name": "UI Game Over Continue Screen",
+     "zh": "愛心用完可以投幣續關（分數減半、這關最多銅牌）、整區重來或回地圖。",
+     "scenarios": [
+      "Continue halves the score"
+     ]
+    },
+    {
+     "name": "UI Control Select",
+     "zh": "可以選滑板（推薦、預設）或經典擋板，選了會記在存檔裡。",
+     "scenarios": [
+      "Switch to flippers"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "level-config",
+   "purpose": "50 關全部照「關卡設定表」和「台面配置表」（同步後的 levels.js）來建；程式裡的公式只留著當第一版和參考用。",
+   "requirements": 7,
+   "scenarios": 15,
+   "reqs": [
+    {
+     "name": "Level Table Drives Every Stage",
+     "zh": "50 關全部照「關卡設定表」和「台面配置表」（同步後的 levels.js）來建；程式裡的公式只留著當第一版和參考用。",
+     "scenarios": [
+      "A table edit changes the game",
+      "Table rows are independent"
+     ]
+    },
+    {
+     "name": "Brick Wall Codes",
+     "zh": "磚牆一排 9 個字：. 空格、1～5 磚血、B 油漆桶、G 道具磚、X 首領；全是數字的排被試算表當成數字也照樣讀成 9 個字。",
+     "scenarios": [
+      "Codes become cells",
+      "Numeric row is read as text"
+     ]
+    },
+    {
+     "name": "First Table Reproduces The Game",
+     "zh": "第一版關卡表跟原本公式產生的遊戲完全一樣；之後企劃改過表，這項檢查就變成「哪些關跟第一版不一樣」的報告。",
+     "scenarios": [
+      "Migration changes nothing"
+     ]
+    },
+    {
+     "name": "Level Sync Checks",
+     "zh": "說「同步關卡表」時，欄位缺漏、數值超出範圍、磚牆字元不對、首領位置不對、磚放不進台面、卡球、柱子貼磚、首領打不倒，都會擋下並列出「第幾關、哪一欄、什麼問題」；難度只報告不擋；部署前先列出這次改了哪幾關，企劃確認才部署。",
+     "scenarios": [
+      "Broken value is blocked",
+      "Difficulty only reports"
+     ]
+    },
+    {
+     "name": "Item Pool Per Stage",
+     "zh": "每關的道具池決定道具磚會掉什麼：「隨機」＝5 種都有可能，填道具代號就只會掉那幾種。",
+     "scenarios": [
+      "Restricted pool"
+     ]
+    },
+    {
+     "name": "Brick Pattern Editor",
+     "zh": "磚塊圖案編輯器：選一關 → 用遊戲美術畫出磚牆 → 點格子切換 . 1～5 B G（首領關多 X）→ 可加減排數 → 即時顯示磚數、總血量、道具數 → 「複製」後直接貼到試算表那一關的第1排～第11排。",
+     "scenarios": [
+      "Edit and copy"
+     ]
+    },
+    {
+     "name": "Table Layout Editor",
+     "zh": "編輯器的「台面」模式可以直接在台面上新增、拖曳、刪除中柱（預設左右對稱，可關掉）、彈力牆、加速帶，以及調整阿鰭的游泳路線與速度；離磚太近、太靠近滑板會即時提醒，也能一鍵檢查卡球；共用的台面可以選「全部一起改」或「另存新台面」；按「複製」得到台面配置表的一列，貼回試算表。",
+     "scenarios": [
+      "Symmetric bumper",
+      "Asymmetric bumper",
+      "Copy a layout row",
+      "Warning for a bumper near bricks",
+      "Save as a new layout",
+      "Stuck check on request"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "medals-and-achievements",
+   "purpose": "過關獎牌只看這關掉了幾顆愛心：沒掉＝金牌、掉 1 顆＝銀牌、掉 2 顆以上或有續關＝銅牌。",
+   "requirements": 5,
+   "scenarios": 9,
+   "reqs": [
+    {
+     "name": "Stage Medal By Hearts Lost",
+     "zh": "過關獎牌只看這關掉了幾顆愛心：沒掉＝金牌、掉 1 顆＝銀牌、掉 2 顆以上或有續關＝銅牌。",
+     "scenarios": [
+      "Medal rules"
+     ]
+    },
+    {
+     "name": "Best Medal Is Kept",
+     "zh": "每關存最好的那一面獎牌，重玩拿更好的會更新、拿更差的不會被蓋掉。",
+     "scenarios": [
+      "Worse replay keeps gold",
+      "Better replay upgrades"
+     ]
+    },
+    {
+     "name": "Achievement Catalog",
+     "zh": "遊戲共有 19 個成就，代號不重複。",
+     "scenarios": [
+      "Catalog is complete"
+     ]
+    },
+    {
+     "name": "Achievement Unlock Conditions",
+     "zh": "19 個成就的解鎖條件，例如打倒各區首領、一次擊球打出 20／50／100 連擊、累計 10 面金牌、一關打到阿鰭 10 次。",
+     "scenarios": [
+      "Combo achievements during play",
+      "Last heart is counted before refill",
+      "Fish hits only count on clear",
+      "One coin district"
+     ]
+    },
+    {
+     "name": "Achievement Unlock Is Permanent",
+     "zh": "成就只會解鎖一次並記在存檔裡，解鎖時跳出「成就解鎖：○○」提示。",
+     "scenarios": [
+      "No repeat unlock"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "newbie-assist",
+   "purpose": "每關的輔助看關卡表（預覽秒數、落點提示、加長球保險、收尾輔助）；地圖卡片寫出這一區第一關的輔助，都沒有就顯示「沒有輔助：全靠你的手感」。",
+   "requirements": 6,
+   "scenarios": 14,
+   "reqs": [
+    {
+     "name": "Per-District Assist Schedule",
+     "zh": "每關的輔助看關卡表（預覽秒數、落點提示、加長球保險、收尾輔助）；地圖卡片寫出這一區第一關的輔助，都沒有就顯示「沒有輔助：全靠你的手感」。",
+     "scenarios": [
+      "Assists come from the table",
+      "Map card shows no-assist line",
+      "Assist announcement on the first stage of a district"
+     ]
+    },
+    {
+     "name": "Trajectory Preview",
+     "zh": "第 1～3 區會畫出白色虛點告訴你球接下來會怎麼走，第 4 區起就沒有了。",
+     "scenarios": [
+      "Preview matches real motion",
+      "Preview while charging the plunger",
+      "No preview in late districts"
+     ]
+    },
+    {
+     "name": "Landing Ring And Flipper Timing Hint",
+     "zh": "第 1、2 區會在滑板線上畫一個圈告訴你球會掉在哪，滑板對準了圈會變綠；經典擋板則是球到可以打的範圍時擋板會亮。",
+     "scenarios": [
+      "Ring turns green under the paddle",
+      "No ring in district 3"
+     ]
+    },
+    {
+     "name": "Extended Ball Save",
+     "zh": "剛發射的幾秒內掉球不扣愛心，第 1 區有 6 秒、第 2 區 4.5 秒、之後 3 秒。",
+     "scenarios": [
+      "Ball save saves a drain"
+     ]
+    },
+    {
+     "name": "Finisher Assist",
+     "zh": "第 1、2 區只剩 3 塊以內、3 秒沒打碎磚時，球往上飛會被輕輕往剩下的磚吸過去，剩下的磚會發光。",
+     "scenarios": [
+      "Finisher keeps the tail short",
+      "Finisher waits for the delay"
+     ]
+    },
+    {
+     "name": "Interactive Tutorial",
+     "zh": "第一次玩第 1 關會有手把手教學（按住往下拉 → 放開 → 看球 → 慢動作接球 3 次），地圖上的「重看教學」可以再來一次。",
+     "scenarios": [
+      "Tutorial runs on the first play",
+      "Move step in paddle control",
+      "Replay tutorial from the map"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "opening-animation",
+   "purpose": "第一次打開遊戲會自動播開場，看完或跳過後記在存檔裡，之後打開直接到標題。",
+   "requirements": 5,
+   "scenarios": 11,
+   "reqs": [
+    {
+     "name": "Opening First-Launch Autoplay",
+     "zh": "第一次打開遊戲會自動播開場，看完或跳過後記在存檔裡，之後打開直接到標題。",
+     "scenarios": [
+      "First launch shows the coin screen",
+      "Later launch skips the opening",
+      "Finishing marks the opening as seen"
+     ]
+    },
+    {
+     "name": "Opening Insert Coin Start",
+     "zh": "開場先停在投幣畫面，點一下（或按任意鍵）＝投幣，同時讓瀏覽器可以出聲，然後動畫才開始計時。",
+     "scenarios": [
+      "Coin screen waits for input",
+      "Tap inserts the coin"
+     ]
+    },
+    {
+     "name": "Opening Timed Beats",
+     "zh": "投幣後照固定時間表播：旁白到 2.6 秒、1.2 秒機台亮、2.6 秒起噴漆炸開 28 團、4.3 秒招牌砸下、5.2 秒噴噴跳出來、7 秒自動進標題。",
+     "scenarios": [
+      "Sound and vibration cues follow the timeline",
+      "Splats are accompanied by brick sounds",
+      "Automatic exit at 7 seconds"
+     ]
+    },
+    {
+     "name": "Opening Skip",
+     "zh": "播放 0.8 秒後點一下就能跳過；剛投幣的 0.8 秒內點了不算，避免投幣那一下連帶跳過。",
+     "scenarios": [
+      "Early tap is ignored",
+      "Later tap skips"
+     ]
+    },
+    {
+     "name": "Opening Replay From Title",
+     "zh": "標題畫面有「重看開場」，按了會從投幣畫面重新播一次。",
+     "scenarios": [
+      "Replay button restarts the opening"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "paddle-control",
+   "purpose": "滑板跟著滑鼠（不用點，移出畫面也跟）、手指或方向鍵移動；正在拉發射桿的那根手指不會帶動滑板，放開後才恢復；滑板追目標的速度最快每秒 2600 px，遊玩中滑鼠游標會藏起來。",
+   "requirements": 5,
+   "scenarios": 15,
+   "reqs": [
+    {
+     "name": "Paddle Input Following",
+     "zh": "滑板跟著滑鼠（不用點，移出畫面也跟）、手指或方向鍵移動；正在拉發射桿的那根手指不會帶動滑板，放開後才恢復；滑板追目標的速度最快每秒 2600 px，遊玩中滑鼠游標會藏起來。",
+     "scenarios": [
+      "Mouse moves the paddle without clicking",
+      "Pulling the plunger does not move the paddle",
+      "Paddle speed is capped per frame",
+      "Arrow keys move the paddle",
+      "Cursor is hidden during paddle play"
+     ]
+    },
+    {
+     "name": "Paddle Movement Range",
+     "zh": "滑板可以在整個台面寬度移動，左邊到左牆 x=20、右邊到發射道內牆 x=340。",
+     "scenarios": [
+      "Paddle edges reach both walls"
+     ]
+    },
+    {
+     "name": "Paddle Aimed Rebound",
+     "zh": "球打在滑板中間直直往上，越靠邊越斜（最斜 55°），出球速度固定 1550；滑板移動中擊球會帶一點側向速度。",
+     "scenarios": [
+      "Center hit goes straight up",
+      "Edge hit goes at a steep angle",
+      "Ball never rests on the paddle",
+      "Side hit bounces like a wall",
+      "Power upgrade raises the paddle shot speed"
+     ]
+    },
+    {
+     "name": "Paddle Sizes",
+     "zh": "滑板有小中大三種（寬 96／112／152）；每關用關卡表「滑板」欄的尺寸；道具「寬板」12 秒內＝大。",
+     "scenarios": [
+      "Stage decides the base size",
+      "Wide item enlarges then restores"
+     ]
+    },
+    {
+     "name": "Paddle Hit Feedback And Combo Reset",
+     "zh": "滑板擊球會有音效和震動（打中間 16ms、打邊邊 24ms 並顯示 ↖／↗），而且每次球回到滑板，連擊數歸零。",
+     "scenarios": [
+      "Edge hit shows an arrow and stronger vibration",
+      "Paddle hit resets the combo"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "plunger-launch",
+   "purpose": "只有球停在發射道底部時才能拉發射桿；等待時下方提示會告訴玩家怎麼拉。",
+   "requirements": 6,
+   "scenarios": 15,
+   "reqs": [
+    {
+     "name": "Plunger Ready State",
+     "zh": "只有球停在發射道底部時才能拉發射桿；等待時下方提示會告訴玩家怎麼拉。",
+     "scenarios": [
+      "Press without a lane ball is ignored",
+      "Hint text while waiting"
+     ]
+    },
+    {
+     "name": "Plunger Drag Pull",
+     "zh": "按住後往下拉，拉的距離÷畫面高度的 16%＝力道（0～1）；每多拉 2 成「喀」一下震動。",
+     "scenarios": [
+      "Drag distance sets the charge",
+      "Pull clicks every 20%"
+     ]
+    },
+    {
+     "name": "Plunger Keyboard Charge",
+     "zh": "電腦按住空白鍵會慢慢往後拉，0.9 秒拉滿，放開就發射；按住時系統自動連發的訊號不會再讓力道歸零。",
+     "scenarios": [
+      "Holding Space charges over time",
+      "Holding longer caps at full",
+      "Auto-repeat keydown keeps the pull"
+     ]
+    },
+    {
+     "name": "Plunger Minimum Pull",
+     "zh": "拉不到 8% 就放開不會發射，拉柄會抖一下並提示「按住往下拉，再放開！」。",
+     "scenarios": [
+      "Tap without pulling does not launch",
+      "Just enough pull launches"
+     ]
+    },
+    {
+     "name": "Plunger Launch Speed",
+     "zh": "放開時的發射速度＝1300＋1200×力道（最小 1300、最大 2500）；發射同時開始計算球保險。",
+     "scenarios": [
+      "Launch speed follows the charge",
+      "Largest ball still leaves the lane",
+      "Gate blocks the ball from re-entering the lane",
+      "Launch starts ball save"
+     ]
+    },
+    {
+     "name": "Plunger Launch Preview",
+     "zh": "第 1～3 區拉發射桿時，會畫出「現在放開會飛到哪」的彈道預覽，跟著力道即時變化。",
+     "scenarios": [
+      "Preview follows the current charge",
+      "No launch preview without the assist"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "power-ups-and-items",
+   "purpose": "一般關卡過關會直接隨機拿到一罐強化（已滿級的不會抽到），首領關不給；強化只在這一輪有效，回地圖重新開始就清空。",
+   "requirements": 5,
+   "scenarios": 14,
+   "reqs": [
+    {
+     "name": "Upgrade Draw On Stage Clear",
+     "zh": "一般關卡過關會直接隨機拿到一罐強化（已滿級的不會抽到），首領關不給；強化只在這一輪有效，回地圖重新開始就清空。",
+     "scenarios": [
+      "Caps are never exceeded",
+      "Boss clear gives no upgrade"
+     ]
+    },
+    {
+     "name": "Upgrade Can Effects",
+     "zh": "9 種強化罐各有上限，例如重漆每級 +1 傷害、大罐每級球半徑 +1.5、穿透漆每級每次發射多 2 次穿透。",
+     "scenarios": [
+      "Pierce passes through a brick",
+      "Maximum big ball still plays",
+      "Bonuses applied at stage start",
+      "Split adds balls"
+     ]
+    },
+    {
+     "name": "Mid-District Start Upgrade Backfill",
+     "zh": "從地圖選中間的關卡開始時，會先自動補上前面幾關該拿的強化罐，愛心一樣是 3 顆。",
+     "scenarios": [
+      "Starting at stage 5"
+     ]
+    },
+    {
+     "name": "Item Effects",
+     "zh": "接到膠囊的瞬間就生效：漆彈在每顆球的位置炸開、慢動作讓時間變慢一半 5 秒、球保險 10 秒內掉球不扣愛心、加一顆從上方多放一顆球、寬板 12 秒內滑板變大（擋板模式擋板變長）。",
+     "scenarios": [
+      "Bomb damages a nearby brick",
+      "Timers start and end",
+      "Wide paddle and flippers revert",
+      "Extra ball"
+     ]
+    },
+    {
+     "name": "Item Capsules",
+     "zh": "打破道具磚會掉下一顆道具膠囊（隨機 5 種之一），每秒 170 px 直直往下掉，不會撞到球和磚；滑板（或擋板）碰到就接住、馬上生效並顯示道具名稱；沒接到掉出台面就消失。第一次出現時噴噴會提醒「用滑板接住」。",
+     "scenarios": [
+      "Capsule is caught by the paddle",
+      "Missed capsule has no effect",
+      "Capsule ignores the ball"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "table-layout",
+   "purpose": "50 關全部用矮台面，跟第 1 區一樣一個畫面就看完。",
+   "requirements": 8,
+   "scenarios": 16,
+   "reqs": [
+    {
+     "name": "Table Height Per District",
+     "zh": "50 關全部用矮台面，跟第 1 區一樣一個畫面就看完。",
+     "scenarios": [
+      "Every stage uses the short table"
+     ]
+    },
+    {
+     "name": "Layout Rotation Per Stage",
+     "zh": "每關用哪個台面看關卡表的「台面配置」欄，台面長什麼樣看「台面配置表」；開場會顯示「台面：○○」；相鄰兩關一樣只報告、不擋。",
+     "scenarios": [
+      "Layout from the table",
+      "Intro shows the layout name"
+     ]
+    },
+    {
+     "name": "Pop Bumpers",
+     "zh": "中柱的位置照台面配置表；球打到會被用力彈開（至少 950）、加 5 分、算一次連擊；中柱和阿鰭的路線一定離磚 46 px 以上，否則同步會擋下。",
+     "scenarios": [
+      "Bumper kicks the ball",
+      "Bumpers keep clear of bricks"
+     ]
+    },
+    {
+     "name": "Fish Bumper A-Fin",
+     "zh": "台面配置表有填「阿鰭」的台面，阿鰭會照填的高度、左右界和速度游來游去；打到它跟打中柱一樣會彈開，並記一次「打到阿鰭」。",
+     "scenarios": [
+      "Fish turns around at the edge",
+      "Fish hit is counted",
+      "Fish is introduced by a comic first"
+     ]
+    },
+    {
+     "name": "Boss Stages Use No Fish",
+     "zh": "首領關（每區第 10 關）不放阿鰭，免得擋住打首領的路線。",
+     "scenarios": [
+      "Boss stage layouts"
+     ]
+    },
+    {
+     "name": "Rubber Rails",
+     "zh": "台面配置表的「彈力牆」會在填的位置加上彈力牆，球撞上去會被彈回（至少 640）。",
+     "scenarios": [
+      "Rubber rail kicks the ball"
+     ]
+    },
+    {
+     "name": "Layouts Have No Stuck Spots",
+     "zh": "15 種台面配置都沒有會讓球卡住不動的死角。",
+     "scenarios": [
+      "Stuck probe in flipper mode",
+      "Stuck probe in paddle mode"
+     ]
+    },
+    {
+     "name": "Boost Pads",
+     "zh": "台面配置表填的位置會出現加速帶（首領關沒有）：球往上經過加速 1.35 倍（最少 1000、最多 2000）、往下不加速、0.5 秒內不重複。",
+     "scenarios": [
+      "Upward ball is boosted",
+      "Falling ball is not boosted",
+      "Cooldown prevents double boosts",
+      "No pads on boss stages"
+     ]
+    }
+   ]
+  }
+ ],
+ "requests": [
+  {
+   "number": 14,
+   "title": "需求：加每日挑戰關卡",
+   "url": "https://github.com/fishon100/pinball-sling/issues",
+   "state": "open",
+   "created": "2026-10-05T16:51:50.863Z",
+   "user": "sandyweng",
+   "labels": [
+    "需求"
+   ],
+   "comments": 1
+  }
+ ],
+ "feedback": [
+  {
+   "number": 13,
+   "title": "回饋：🔴 第 5 關球卡在右上角",
+   "url": "https://github.com/fishon100/pinball-sling/issues",
+   "state": "open",
+   "created": "2026-10-05T16:51:50.863Z",
+   "user": "sandyweng",
+   "labels": [
+    "回饋"
+   ],
+   "comments": 1
+  },
+  {
+   "number": 11,
+   "title": "回饋：🟢 噴漆特效很爽",
+   "url": "https://github.com/fishon100/pinball-sling/issues",
+   "state": "closed",
+   "created": "2026-10-05T16:51:50.863Z",
+   "user": "sandyweng",
+   "labels": [
+    "回饋"
+   ],
+   "comments": 1
+  }
+ ],
+ "commits": [
+  {
+   "sha": "9385474",
+   "date": "2026-10-05T16:51:50.863Z",
+   "author": "fishon100",
+   "subject": "同步計劃改成工作台優先、Notion 選用",
+   "url": "https://github.com/fishon100/pinball-sling/commits/main"
+  }
+ ],
+ "runs": [
+  {
+   "name": "網站部署",
+   "status": "completed",
+   "conclusion": "success",
+   "date": "2026-10-05T16:51:50.863Z",
+   "url": "https://github.com/fishon100/pinball-sling/actions",
+   "title": "v3.7.3 關卡編輯器加台面模式"
+  }
+ ],
+ "tools": [
+  {
+   "label": "關卡編輯器",
+   "url": "https://fishon100.github.io/pinball-sling/street/editor.html",
+   "icon": "wrench",
+   "desc": "畫磚塊圖案與台面（中柱、彈力牆、加速帶、阿鰭），複製回關卡設定表"
+  },
+  {
+   "label": "測試頁與難度報告",
+   "url": "https://fishon100.github.io/pinball-sling/street/test.html",
+   "icon": "flask",
+   "desc": "自動測試、擬人玩家難度報告"
+  }
+ ],
+ "pulls": [
+  {
+   "number": 41,
+   "title": "Boss 血條：先寫測試＋血條元件",
+   "url": "https://github.com/fishon100/game-dev-flow-template/pulls",
+   "user": "claude[bot]",
+   "created": "2026-10-05T17:30:49.797Z",
+   "draft": false,
+   "branch": "claude/issue-12"
+  }
+ ]
+}

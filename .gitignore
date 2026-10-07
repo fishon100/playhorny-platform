@@ -1,0 +1,22 @@
+# Spectra app data
+.spectra/
+
+# Spectra 的 skills 由 `spxa init --tools claude` 產生（授權不允許轉散布，不進 git）
+.claude/skills/spectra-*/
+
+# 個人設定：ntfy 主題名稱等於密碼、本機路徑
+tools/*.config.json
+!tools/*.config.example.json
+
+# 企劃匯出的試算表（可能含未公開內容；同步後產生的遊戲資料檔才進 git）
+tools/tables/in/*
+!tools/tables/in/.gitkeep
+
+node_modules/
+*.tmp
+
+# 工作台同步的暫存輸出（GitHub Actions 推到 workbench-data 分支）
+workbench-out/
+docs/spectra/.vector-search.db*
+.superpowers/
+web/console/demo.json

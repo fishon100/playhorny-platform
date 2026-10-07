@@ -1,0 +1,42 @@
+name: 🎮 試玩回饋
+description: 試玩後覺得哪裡要改、哪裡很好
+title: "回饋："
+labels: ["回饋"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        一張卡寫**一件事**。名詞請用知識庫「名詞表」裡的名字（例：「彈跳柱」而不是「中間那個柱子」）。
+        寫完後對 AI 說「**看回饋**」。
+  - type: dropdown
+    id: level
+    attributes:
+      label: 等級
+      options:
+        - 🔴 必修（不改不行）
+        - 🟡 建議（改了會更好）
+        - 🟢 很好（請保留不要動）
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 試玩的版本或日期
+      description: 通知或遊戲畫面上看得到；不知道就寫日期
+      placeholder: v3.7.3 或 10/6
+  - type: textarea
+    id: what
+    attributes:
+      label: 發生什麼事／想要什麼感覺
+      description: 截圖或錄影直接拖進來
+      placeholder: 例：第 5 關球常常卡在右上角，要等很久才掉下來
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: 用什麼玩
+      options:
+        - 手機
+        - 平板
+        - 電腦
