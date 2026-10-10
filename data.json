@@ -1,0 +1,493 @@
+{
+ "generatedAt": "2026-10-10T15:25:18.509Z",
+ "repo": "fishon100/playhorny-platform",
+ "repoUrl": "https://github.com/fishon100/playhorny-platform",
+ "specDir": "docs/提案",
+ "changesDir": "docs/提案",
+ "flow": {
+  "mode": "planning",
+  "stages": [
+   {
+    "n": 1,
+    "label": "需求",
+    "sub": "需求池／回饋"
+   },
+   {
+    "n": 2,
+    "label": "企劃書",
+    "sub": "Notion"
+   },
+   {
+    "n": 3,
+    "label": "示意圖",
+    "sub": "介面向才有"
+   },
+   {
+    "n": 4,
+    "label": "需求確認",
+    "sub": "M1",
+    "milestone": "M1"
+   },
+   {
+    "n": 5,
+    "label": "並行製作",
+    "sub": "美術／後端／前端"
+   },
+   {
+    "n": 6,
+    "label": "驗收",
+    "sub": "SPEC 驗收條件"
+   },
+   {
+    "n": 7,
+    "label": "完成",
+    "sub": "歸檔"
+   }
+  ]
+ },
+ "private": false,
+ "branch": "main",
+ "contentDirs": [
+  "docs/企劃",
+  "docs/提案"
+ ],
+ "content": [
+  {
+   "path": "docs/企劃/README.md",
+   "name": "README.md",
+   "ext": "md",
+   "size": 736,
+   "title": "PlayHorny 平台 — 企劃文件"
+  },
+  {
+   "path": "docs/提案/game-page-redesign/proposal.md",
+   "name": "proposal.md",
+   "ext": "md",
+   "size": 1809,
+   "title": "proposal"
+  },
+  {
+   "path": "docs/提案/game-page-redesign/tasks.md",
+   "name": "tasks.md",
+   "ext": "md",
+   "size": 1311,
+   "title": "tasks"
+  },
+  {
+   "path": "docs/提案/game-page-redesign/示意圖/遊戲內頁_v21.html",
+   "name": "遊戲內頁_v21.html",
+   "ext": "html",
+   "size": 7384307,
+   "title": "極幻戰神 × 異界傳說 — 遊戲下載頁"
+  },
+  {
+   "path": "docs/提案/game-page-redesign/遊戲內頁_v21.spec.md",
+   "name": "遊戲內頁_v21.spec.md",
+   "ext": "md",
+   "size": 53165,
+   "title": "遊戲內頁 規格書（v21）"
+  }
+ ],
+ "assets": null,
+ "name": "PlayHorny 平台",
+ "links": [
+  {
+   "label": "文件中心（Notion）",
+   "url": "https://app.notion.com/p/1af11c058c2d80d5a502d3d5052041a8"
+  },
+  {
+   "label": "專案工作流程 × SDD",
+   "url": "https://app.notion.com/p/3f211c058c2d8167a64de51e51e6d89c"
+  }
+ ],
+ "tools": [],
+ "changes": [
+  {
+   "id": "game-page-redesign",
+   "folder": "game-page-redesign",
+   "archived": false,
+   "date": "",
+   "title": "遊戲內頁改版（四區塊決策動線）",
+   "why": "玩家多半用手機看遊戲下載頁，現在的頁面資訊架構與下載動線不好用。這次全面重設計，核心目標是**提升用戶決策效率**：玩家依序經過「快速判斷 → 深入了解 → 確認門檻 → 建立信任」四個階段，頁面就照這四段由上到下排。（細節見企劃書「一、背景與目的」）",
+   "what": "- 頁面四個區塊：吸引（主視覺、識別、分級）→ 深入了解（截圖輪播、下載／購買、收藏分享、介紹）→ 規格確認 → 信任建立（瑟瑟商城入口、社群、情報）\n- 下載／購買區 12 種主狀態＋2 個疊加層（更新／維護、PC 提醒）；站內預約／報名 4 種是後續優化\n- RWD：手機版優先，1024px 以上電腦版（右欄下載區 sticky、往下滾動提示與兩個吸附點）\n- 規格全部在示意圖 SPEC：18 個版位、83 條驗收條件（假如／當／則）、需求對照頁（企劃書 § ↔ SPEC）\n- 程式由公司前端／後端團隊實作；這張提案追到驗收結束",
+   "confirm": "目前沒有。企劃書 v1.1 與 SPEC v21 已於 2026-10-07 同步（需求對照頁全部「一致」或「已同步」）。",
+   "breaking": false,
+   "kind": "企劃",
+   "docs": "介面向",
+   "brief": "https://app.notion.com/p/38711c058c2d8030b36bc9d6bdf36fa3（v1.1，2026-10-07）",
+   "mockups": [
+    "docs/提案/game-page-redesign/示意圖/遊戲內頁_v21.html"
+   ],
+   "specsheet": "docs/提案/game-page-redesign/遊戲內頁_v21.spec.md",
+   "optimize": false,
+   "base": "",
+   "design": "https://claude.ai/design/p/c5f1f929-a427-47b4-b2c2-4218c3db8a97?file=%E9%81%8A%E6%88%B2%E5%85%A7%E9%A0%81_v20.html&present=1",
+   "qaFocus": [],
+   "capabilities": [],
+   "reqs": [],
+   "artifacts": {
+    "proposal": true,
+    "specs": false,
+    "design": false,
+    "tasks": true
+   },
+   "tasks": {
+    "groups": [
+     {
+      "title": "1. 需求",
+      "items": [
+       {
+        "done": true,
+        "text": "1.1 需求來源：平台優化項目清單（Notion）"
+       }
+      ]
+     },
+     {
+      "title": "2. 企劃書",
+      "items": [
+       {
+        "done": true,
+        "text": "2.1 Notion 撰寫企劃書 v1（2026-06-22）"
+       },
+       {
+        "done": true,
+        "text": "2.2 依示意圖 SPEC 同步為 v1.1（2026-10-07）"
+       }
+      ]
+     },
+     {
+      "title": "3. 示意圖",
+      "items": [
+       {
+        "done": true,
+        "text": "3.1 示意圖 v20（Claude Design）"
+       },
+       {
+        "done": true,
+        "text": "3.2 示意圖 v21：加需求對照、驗收條件、瑟瑟商城入口；匯出 spec.md（2026-10-07）"
+       }
+      ]
+     },
+     {
+      "title": "4. 需求確認 ◆",
+      "items": [
+       {
+        "done": true,
+        "text": "M1 需求確認：企劃書 v1.1＋示意圖 v21（2026-10-07，對話中確認）"
+       }
+      ]
+     },
+     {
+      "title": "5. 並行製作",
+      "items": [
+       {
+        "done": false,
+        "text": "5.1 依示意圖做視覺稿：主視覺兩種尺寸、下載按鈕各狀態、分級標章、情報卡片、商城入口"
+       },
+       {
+        "done": false,
+        "text": "5.2 視覺稿完成約九成，通知企劃"
+       },
+       {
+        "done": false,
+        "text": "M2 規格確認：補 SPEC 介面細節（主視覺與截圖尺寸、介紹收合高度、語系 Key 待補項），重新匯出 spec.md"
+       },
+       {
+        "done": false,
+        "text": "5.3 開工單（連結）：狀態判定 API（12 種狀態、疊加層）、商店上架狀態、情報撈取"
+       },
+       {
+        "done": false,
+        "text": "5.4 後端完成"
+       },
+       {
+        "done": false,
+        "text": "5.5 開工單（連結）：以 spec.md 的驗收條件為驗收依據"
+       },
+       {
+        "done": false,
+        "text": "5.6 結構與邏輯完成（M1 後可做）"
+       },
+       {
+        "done": false,
+        "text": "5.7 介面細節完成（M2 之後）"
+       }
+      ]
+     },
+     {
+      "title": "6. 驗收",
+      "items": [
+       {
+        "done": false,
+        "text": "6.1 照 spec.md 的 83 條驗收條件逐條驗（手機版與電腦版）"
+       },
+       {
+        "done": false,
+        "text": "6.2 回饋寫回本提案對應階段"
+       }
+      ]
+     }
+    ],
+    "total": 16,
+    "done": 6,
+    "hasApprovalItem": false,
+    "approved": false,
+    "approvalNote": "",
+    "next": "5.1 依示意圖做視覺稿：主視覺兩種尺寸、下載按鈕各狀態、分級標章、情報卡片、商城入口"
+   },
+   "plan": {
+    "stages": [
+     {
+      "n": 1,
+      "title": "需求",
+      "lanes": [
+       {
+        "name": "",
+        "items": [
+         {
+          "done": true,
+          "text": "1.1 需求來源：平台優化項目清單（Notion）",
+          "milestone": "",
+          "note": ""
+         }
+        ],
+        "total": 1,
+        "done": 1
+       }
+      ],
+      "total": 1,
+      "done": 1
+     },
+     {
+      "n": 2,
+      "title": "企劃書",
+      "lanes": [
+       {
+        "name": "",
+        "items": [
+         {
+          "done": true,
+          "text": "2.1 Notion 撰寫企劃書 v1（2026-06-22）",
+          "milestone": "",
+          "note": ""
+         },
+         {
+          "done": true,
+          "text": "2.2 依示意圖 SPEC 同步為 v1.1（2026-10-07）",
+          "milestone": "",
+          "note": ""
+         }
+        ],
+        "total": 2,
+        "done": 2
+       }
+      ],
+      "total": 2,
+      "done": 2
+     },
+     {
+      "n": 3,
+      "title": "示意圖",
+      "lanes": [
+       {
+        "name": "",
+        "items": [
+         {
+          "done": true,
+          "text": "3.1 示意圖 v20（Claude Design）",
+          "milestone": "",
+          "note": ""
+         },
+         {
+          "done": true,
+          "text": "3.2 示意圖 v21：加需求對照、驗收條件、瑟瑟商城入口；匯出 spec.md（2026-10-07）",
+          "milestone": "",
+          "note": ""
+         }
+        ],
+        "total": 2,
+        "done": 2
+       }
+      ],
+      "total": 2,
+      "done": 2
+     },
+     {
+      "n": 4,
+      "title": "需求確認",
+      "lanes": [
+       {
+        "name": "",
+        "items": [
+         {
+          "done": true,
+          "text": "M1 需求確認：企劃書 v1.1＋示意圖 v21（2026-10-07，對話中確認）",
+          "milestone": "M1",
+          "note": "2026-10-07，對話中確認"
+         }
+        ],
+        "total": 1,
+        "done": 1
+       }
+      ],
+      "total": 1,
+      "done": 1
+     },
+     {
+      "n": 5,
+      "title": "並行製作",
+      "lanes": [
+       {
+        "name": "美術",
+        "items": [
+         {
+          "done": false,
+          "text": "5.1 依示意圖做視覺稿：主視覺兩種尺寸、下載按鈕各狀態、分級標章、情報卡片、商城入口",
+          "milestone": "",
+          "note": ""
+         },
+         {
+          "done": false,
+          "text": "5.2 視覺稿完成約九成，通知企劃",
+          "milestone": "",
+          "note": ""
+         },
+         {
+          "done": false,
+          "text": "M2 規格確認：補 SPEC 介面細節（主視覺與截圖尺寸、介紹收合高度、語系 Key 待補項），重新匯出 spec.md",
+          "milestone": "M2",
+          "note": ""
+         }
+        ],
+        "total": 3,
+        "done": 0
+       },
+       {
+        "name": "後端",
+        "items": [
+         {
+          "done": false,
+          "text": "5.3 開工單（連結）：狀態判定 API（12 種狀態、疊加層）、商店上架狀態、情報撈取",
+          "milestone": "",
+          "note": ""
+         },
+         {
+          "done": false,
+          "text": "5.4 後端完成",
+          "milestone": "",
+          "note": ""
+         }
+        ],
+        "total": 2,
+        "done": 0
+       },
+       {
+        "name": "前端",
+        "items": [
+         {
+          "done": false,
+          "text": "5.5 開工單（連結）：以 spec.md 的驗收條件為驗收依據",
+          "milestone": "",
+          "note": ""
+         },
+         {
+          "done": false,
+          "text": "5.6 結構與邏輯完成（M1 後可做）",
+          "milestone": "",
+          "note": ""
+         },
+         {
+          "done": false,
+          "text": "5.7 介面細節完成（M2 之後）",
+          "milestone": "",
+          "note": ""
+         }
+        ],
+        "total": 3,
+        "done": 0
+       }
+      ],
+      "total": 8,
+      "done": 0
+     },
+     {
+      "n": 6,
+      "title": "驗收",
+      "lanes": [
+       {
+        "name": "",
+        "items": [
+         {
+          "done": false,
+          "text": "6.1 照 spec.md 的 83 條驗收條件逐條驗（手機版與電腦版）",
+          "milestone": "",
+          "note": ""
+         },
+         {
+          "done": false,
+          "text": "6.2 回饋寫回本提案對應階段",
+          "milestone": "",
+          "note": ""
+         }
+        ],
+        "total": 2,
+        "done": 0
+       }
+      ],
+      "total": 2,
+      "done": 0
+     }
+    ],
+    "milestones": {
+     "M1": {
+      "done": true,
+      "note": "2026-10-07，對話中確認",
+      "stage": 4,
+      "text": "M1 需求確認：企劃書 v1.1＋示意圖 v21（2026-10-07，對話中確認）"
+     },
+     "M2": {
+      "done": false,
+      "note": "",
+      "stage": 5,
+      "text": "M2 規格確認：補 SPEC 介面細節（主視覺與截圖尺寸、介紹收合高度、語系 Key 待補項），重新匯出 spec.md"
+     }
+    },
+    "current": 5,
+    "total": 16,
+    "done": 6
+   },
+   "status": "並行製作"
+  }
+ ],
+ "specs": [],
+ "requests": [],
+ "feedback": [],
+ "commits": [
+  {
+   "sha": "c6c6103",
+   "date": "2026-10-07T22:18:58+08:00",
+   "author": "Claude",
+   "subject": "PlayHorny 平台：企劃文件流，首張提案 game-page-redesign",
+   "url": "https://github.com/fishon100/playhorny-platform/commit/c6c610381f678e5e2595a2893f7c3b532d5290fe"
+  }
+ ],
+ "runs": [
+  {
+   "name": "自動測試＋部署",
+   "status": "completed",
+   "conclusion": "success",
+   "date": "2026-10-07T14:19:26Z",
+   "url": "https://github.com/fishon100/playhorny-platform/actions/runs/37635723698",
+   "title": "PlayHorny 平台：企劃文件流，首張提案 game-page-redesign"
+  },
+  {
+   "name": "自動測試＋部署",
+   "status": "completed",
+   "conclusion": "cancelled",
+   "date": "2026-10-07T14:19:17Z",
+   "url": "https://github.com/fishon100/playhorny-platform/actions/runs/37635703886",
+   "title": "PlayHorny 平台：企劃文件流，首張提案 game-page-redesign"
+  }
+ ],
+ "pulls": []
+}
